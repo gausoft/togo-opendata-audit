@@ -1,6 +1,6 @@
-# Audit indépendant de l'open data togolais
+# Open data togolais : un portail installé, jamais mis en service
 
-**Diagnostic chiffré et benchmark international des portails [opendata.gouv.tg](https://opendata.gouv.tg/fr/) et [geodata.gouv.tg](https://geodata.gouv.tg)**
+**Audit indépendant chiffré et benchmark international des portails [opendata.gouv.tg](https://opendata.gouv.tg/fr/) et [geodata.gouv.tg](https://geodata.gouv.tg)**
 
 > Rapport indépendant — mai 2026
 > Auteur : [@gausoft](https://github.com/gausoft) (Lomé, Togo)
@@ -11,21 +11,25 @@
 
 ## Résumé exécutif
 
-Le Togo dispose, sur le papier, d'une infrastructure d'open data complète : un portail généraliste ([opendata.gouv.tg](https://opendata.gouv.tg/fr/)) propulsé par **udata**, le même logiciel libre que [data.gouv.fr](https://www.data.gouv.fr/), et un géoportail ([geodata.gouv.tg](https://geodata.gouv.tg)) adossé à un GeoServer institutionnel. Les outils sont là. Les standards internationaux qui pourraient les rendre crédibles existent depuis dix ans (Open Data Charter, DCAT-AP, FAIR, 5★ Linked Open Data). Et pourtant.
+**En mai 2026, la fiche officielle du géoportail de l'État togolais désigne comme responsable « Claudius Ptolémée, géographe en chef, Alexandrie, Empire romain ».** Ce n'est pas une blague : c'est le texte par défaut, jamais modifié, du logiciel installé il y a plusieurs années. Cette anecdote résume à elle seule le diagnostic de cet audit — l'open data togolais a été *installé*, jamais *exploité*.
 
-Cet audit, conduit sur **100 % des 1 550 datasets** publiés et croisé avec **dix portails pairs** (France, Royaume-Uni, Kenya, Ghana, Côte d'Ivoire, Sénégal, Rwanda, Burkina Faso, Nigeria, Bénin), révèle un écart frappant entre l'apparence et la substance.
+Le Togo dispose pourtant, sur le papier, de tout : un portail public ([opendata.gouv.tg](https://opendata.gouv.tg/fr/)) propulsé par **udata** — le même logiciel libre que [data.gouv.fr](https://www.data.gouv.fr/) —, un géoportail cartographique ([geodata.gouv.tg](https://geodata.gouv.tg)) adossé à un **GeoServer** institutionnel, et 1 550 jeux de données publiés. Les outils sont là. Les standards internationaux qui les rendraient utilisables (Open Data Charter, principes FAIR, format d'échange DCAT) existent depuis dix ans et sont, pour la plupart, gratuits à activer.
 
-**Cinq chiffres pour fixer le diagnostic** :
+Cet audit indépendant, mené sur **100 % des 1 550 datasets** publiés et croisé avec **dix portails comparables** (France, Royaume-Uni, Kenya, Ghana, Côte d'Ivoire, Sénégal, Rwanda, Burkina Faso, Nigeria, Bénin), révèle un écart frappant entre l'apparence et la substance. Cinq chiffres pour fixer le diagnostic :
 
-1. **99,7 %** des datasets n'ont pas été modifiés depuis janvier 2025 (16 mois). Le portail est un instantané gelé, pas un flux vivant.
-2. **0** vue, **0** téléchargement, **0** réutilisation, **0** discussion — selon les métriques officielles renvoyées par `/api/1/site/`. **13** comptes utilisateurs enregistrés au total.
-3. **Le Ministère des Armées (18 datasets) et celui de la Sécurité (7 datasets) publient à 100 % des fichiers vides** — uniquement le dictionnaire des colonnes, sans aucune ligne de données. Le Ministère de l'Économie Numérique, dont ce devrait être le cœur de métier, atteint **87 % de fichiers vides**.
-4. Le géoportail expose **un seul layer cartographique** via le standard ouvert WMS, dans un workspace nommé `prise_freely_available`. La fiche de contact officielle de ce service public togolais est restée sur les valeurs par défaut de GeoServer : **« Claudius Ptolomaeus, Empire romain, Alexandria »**.
-5. Le Togo est le **seul portail national** parmi les onze comparés à n'être ni signataire de l'Open Data Charter, ni membre de l'Open Government Partnership.
+1. **Les ministères des Armées (18 datasets) et de la Sécurité (7) publient à 100 % des fichiers vides** — uniquement la liste des colonnes, sans aucune ligne de données. Le Ministère de l'Économie Numérique, dont c'est pourtant le cœur de métier, atteint **87 % de fichiers vides**. À l'inverse, le Ministère de l'Agriculture et l'INSEED publient à plus de 99 % des données réelles : **le problème n'est ni technique, ni budgétaire — il se joue administration par administration.**
 
-Aucun de ces constats ne tient à un manque de moyens techniques — *udata* et GeoServer sont libres et gratuits, et la même infrastructure logicielle propulse un portail français qui publie 50 fois plus de datasets et les met à jour quotidiennement. **L'écart est organisationnel, pas technologique.**
+2. **Selon les compteurs officiels renvoyés par le portail lui-même : 0 vue, 0 téléchargement, 0 réutilisation, 0 discussion, 13 comptes utilisateurs enregistrés au total.** À titre de comparaison, data.gouv.fr (même logiciel) totalise 64 millions de vues annuelles.
 
-Ce rapport documente chaque chiffre, le situe par rapport aux normes internationales mesurables (DCAT-AP, FAIR, Open Definition 2.1, 5★, ODIN, EU Open Data Maturity), et conclut sur **dix recommandations actionnables**, classées par effort, qui transformeraient la situation en un trimestre — sans recrutement, sans budget supplémentaire, en activant les fonctions natives déjà disponibles dans le portail.
+3. **99,7 % des jeux de données n'ont pas été modifiés depuis plus de 12 mois.** Le portail fonctionne comme une photographie figée, pas comme un service vivant.
+
+4. Le géoportail [geodata.gouv.tg](https://geodata.gouv.tg) n'expose qu'**un seul fond de carte** par les protocoles ouverts standards. Le reste des couches visibles à l'écran transite par une API privée non documentée — invisible aux outils SIG mondiaux (QGIS, ArcGIS).
+
+5. **Sur les onze portails comparés, le Togo est le seul à n'avoir signé ni l'Open Data Charter ni adhéré à l'Open Government Partnership.** Bénin, Burkina Faso, Côte d'Ivoire, Ghana, Kenya, Nigeria et Sénégal y sont tous.
+
+Aucun de ces constats ne tient à un manque de moyens : *udata* et *GeoServer* sont libres et gratuits, et la même infrastructure logicielle publie 50 fois plus de données en France et les met à jour quotidiennement. **L'écart est organisationnel, pas technologique.**
+
+Ce rapport documente chaque chiffre, le situe par rapport aux normes internationales mesurables, et conclut sur **dix recommandations actionnables** — dont trois activables en quelques heures, sans recrutement et sans budget supplémentaire.
 
 ---
 
@@ -47,19 +51,19 @@ Ce rapport documente chaque chiffre, le situe par rapport aux normes internation
 
 Chaque ressource téléchargée est classée selon une heuristique stricte :
 
-| Catégorie | Critère |
-|-----------|---------|
-| `data_tabular` | Au moins 2 lignes après l'en-tête, en-tête non identifié comme dictionnaire |
-| `data_geo` | Idem, et l'en-tête contient un champ `geometry`, `lat`, `lon` ou équivalent |
-| `schema_only` | L'en-tête correspond au pattern `No., Nom du champ, Question, Description, Type du champ` — i.e. une description de schéma plutôt qu'une donnée |
-| `empty` | Moins de 30 octets ou 1 ligne |
-| `non_csv`, `http_4xx`, `no_resource` | Cas marginaux |
+| Catégorie | En clair | Critère technique |
+|-----------|----------|---------|
+| `data_tabular` | Vraies données | Au moins 2 lignes après l'en-tête, en-tête non identifié comme dictionnaire |
+| `data_geo` | Vraies données géolocalisées | Idem, et l'en-tête contient un champ `geometry`, `lat`, `lon` ou équivalent |
+| `schema_only` | Uniquement la liste des colonnes, aucune donnée | L'en-tête correspond au pattern `No., Nom du champ, Question, Description, Type du champ` |
+| `empty` | Fichier vide | Moins de 30 octets ou 1 ligne |
+| `non_csv`, `http_4xx`, `no_resource` | Cas marginaux | Erreur HTTP, format imprévu, ou ressource absente |
 
 Le code est intégralement public : `scripts/03_content_audit.py` dans le dépôt.
 
 ### 1.3 Limites
 
-- L'audit examine la **première ressource CSV** de chaque dataset. 193 datasets ont 2 ressources ou plus ; pour 12 d'entre eux, la 1ʳᵉ est un schéma et la 2ᵉ contient les données. Cela conduit à une **surestimation marginale** (≤ 12 cas sur 1 550) du taux de schema-only. Le chiffre net retenu dans ce rapport est donc **102/1 550 datasets purement schema-only**, soit **6,6 %** plutôt que 7,4 %.
+- L'audit examine la **première ressource CSV** de chaque dataset. 193 datasets ont 2 ressources ou plus ; pour 12 d'entre eux, la 1ʳᵉ est un schéma et la 2ᵉ contient les données. Le chiffre brut de 114 datasets schema-only est donc corrigé à **102 / 1 550 = 6,6 %** de datasets *purement* schema-only — c'est ce chiffre net qui est retenu dans tout le rapport.
 - L'audit ne télécharge que les 32 premiers KB de chaque ressource — suffisant pour distinguer un schéma vide d'une vraie donnée tabulaire, insuffisant pour juger l'exhaustivité d'un fichier.
 - Les indices internationaux (ODIN, GDB) ne couvrent pas tous le Togo systématiquement ; les valeurs reportées sont les plus récentes accessibles publiquement.
 
@@ -83,7 +87,7 @@ Le code est intégralement public : `scripts/03_content_audit.py` dans le dépô
 | Ensemble des ministères togolais | 287 | **18,5 %** |
 | Autres (CEGA, Kaggle, OCDE, individuels) | 13 | 0,8 % |
 
-**Lecture** : 78 % du portail est constitué d'indicateurs Banque Mondiale ou de séries INSEED, déjà disponibles ailleurs. Si l'on retire ce socle, le portail couvre 287 datasets ministériels — soit moins que [data.gov.gh](https://data.gov.gh/) (271 catalogues, Ghana, CKAN), et environ 1,6× le portail [data.gouv.ci](https://data.gouv.ci/) (177 datasets, Côte d'Ivoire). Le « volume affiché » et la « production réelle » sont deux choses différentes.
+**Lecture** : 78 % du portail est constitué d'indicateurs Banque Mondiale ou de séries INSEED, déjà disponibles ailleurs. Si l'on retire ce socle, la production purement ministérielle togolaise se réduit à **287 datasets** — un ordre de grandeur comparable à celui des portails ghanéen (271 catalogues sur [data.gov.gh](https://data.gov.gh/)) ou ivoirien (177 datasets sur [data.gouv.ci](https://data.gouv.ci/)). Le « volume affiché » et la « production administrative réelle » sont deux choses différentes.
 
 ### 2.3 Format
 
@@ -95,7 +99,7 @@ Le code est intégralement public : `scripts/03_content_audit.py` dans le dépô
 | PNG | 1 | 0,05 % |
 | ZIP | 1 | 0,05 % |
 
-**Lecture** : aucun GeoJSON, aucun JSON, aucun Parquet, aucun RDF, aucune API exposée comme « ressource ». À l'aune des [5★ de Tim Berners-Lee](https://5stardata.info/en/), tous les datasets plafonnent à **★★★** (CSV non-propriétaire). Aucune ressource ne porte d'URI réutilisable, donc aucune n'atteint ★★★★ (sans parler de ★★★★★).
+**Lecture** : aucun GeoJSON, aucun JSON, aucun Parquet, aucun RDF, aucune API exposée comme « ressource ». À l'aune de [l'échelle 5★ de Tim Berners-Lee](https://5stardata.info/en/) — un classement standard qui mesure le degré d'« ouverture technique » d'un jeu de données, de ★ (PDF sous licence ouverte) à ★★★★★ (données reliées entre elles sur le web sémantique) —, tous les datasets togolais plafonnent à **★★★** (CSV non-propriétaire). Aucune ressource ne porte d'identifiant web réutilisable (URI), donc aucune n'atteint ★★★★.
 
 ### 2.4 Licence
 
@@ -107,7 +111,7 @@ Le code est intégralement public : `scripts/03_content_audit.py` dans le dépô
 | `other-closed` | 9 | 0,6 % |
 | Autres (CC-BY-SA, CC-BY-NC, PDDL, NC) | 4 | 0,3 % |
 
-**Lecture** : ~99 % des datasets sont publiés sous une licence ouverte ou présumée telle. C'est **un point fort réel** par rapport aux portails africains pairs où la mention de licence est souvent absente. Le bémol : 48 % portent l'étiquette `other-open` qui n'est pas un identifiant SPDX/OKFN reconnu — un automate de fédération ne peut pas la valider sans inspection humaine, ce qui contrevient au principe FAIR R1.1 (« meta(data) released with a clear and accessible licence »).
+**Lecture** : ~99 % des datasets sont publiés sous une licence ouverte ou présumée telle. C'est **un point fort réel** par rapport aux portails africains pairs où la mention de licence est souvent absente. Le bémol : 48 % portent l'étiquette `other-open`, qui n'est pas un identifiant standard reconnu (type SPDX) — un automate de fédération ne peut donc pas la valider sans inspection humaine, ce qui contrevient au principe **FAIR R1.1** (« données accompagnées d'une licence claire et accessible » — FAIR désigne les quatre critères *Findable, Accessible, Interoperable, Reusable* qui rendent une donnée utilisable par d'autres que son producteur).
 
 ---
 
@@ -115,16 +119,9 @@ Le code est intégralement public : `scripts/03_content_audit.py` dans le dépô
 
 ### 3.1 Tout le portail a été produit en une seule rafale
 
-| Bucket de fraîcheur (`last_modified`) | Datasets | Part |
-|---------------------------------------|---------:|-----:|
-| < 1 mois | 0 | 0 % |
-| 1–3 mois | 0 | 0 % |
-| 3–6 mois | 0 | 0 % |
-| 6–12 mois | 5 | 0,3 % |
-| **12–24 mois** | **1 545** | **99,7 %** |
-| > 24 mois | 0 | 0 % |
+![Distribution des dates de dernière modification des 1 550 datasets : 99,7 % se concentrent dans le bucket 12-24 mois, le reste du graphique est vide](figures/fig2_freshness_wall.png)
 
-La date de dernière modification la plus ancienne est janvier 2025, la plus récente novembre 2025. **Le portail fonctionne comme un instantané daté, pas comme un flux.**
+La date de dernière modification la plus ancienne est **décembre 2024**, la plus récente **octobre 2025**. Aucun dataset n'a été touché dans les six mois précédant l'audit. **Le portail fonctionne comme un instantané daté, pas comme un flux.**
 
 ### 3.2 La déclaration de fréquence n'engage personne
 
@@ -136,7 +133,7 @@ La date de dernière modification la plus ancienne est janvier 2025, la plus ré
 | `daily` | 2 | 0,1 % |
 | Autres (`punctual`, `bimonthly`, `quarterly`, `triennial`, `quinquennial`) | 5 | 0,3 % |
 
-Le DCAT vocabulaire reconnaît `irregular` comme valeur valide — mais la [norme HVD (UE 2023/138)](https://eur-lex.europa.eu/EN/legal-content/summary/open-data-and-the-reuse-of-public-sector-information.html) et l'auditeur de [Neumaier et al. (ACM 2016)](https://dl.acm.org/doi/10.1145/2964909) considèrent qu'au-delà de **deux fois la périodicité déclarée**, un dataset est **stale par auto-déclaration**. Un dataset déclaré `annual` non touché depuis 16 mois est, selon ce critère, formellement périmé — ce qui est le cas de la totalité des 243 datasets `annual`.
+Le vocabulaire DCAT reconnaît `irregular` comme valeur valide — mais la [norme européenne HVD (UE 2023/138)](https://eur-lex.europa.eu/EN/legal-content/summary/open-data-and-the-reuse-of-public-sector-information.html) et l'auditeur de [Neumaier et al. (ACM 2016)](https://dl.acm.org/doi/10.1145/2964909) considèrent qu'au-delà de **deux fois la périodicité déclarée**, un dataset est **formellement périmé selon ses propres règles**. Un dataset déclaré `annual` mais non touché depuis plus de 12 mois entre dans ce cas — soit la totalité des 243 datasets `annual` du portail togolais.
 
 ### 3.3 Personne ne s'en sert (selon le portail lui-même)
 
@@ -150,6 +147,8 @@ Compteurs renvoyés par l'endpoint officiel `/api/1/site/` au moment de l'audit 
   "reuses": 0, "max_reuse_datasets": 0, "max_reuse_followers": 0
 }
 ```
+
+**Lecture** : à mai 2026, le portail déclare lui-même 0 vue, 0 téléchargement, 0 réutilisation, 0 discussion, et 13 comptes utilisateurs au total — pour 1 550 jeux de données et 42 organisations.
 
 Deux interprétations possibles : (a) l'instrumentation des métriques est désactivée — auquel cas le portail ne sait pas ce qu'il diffuse — ou (b) elle est active et personne n'utilise effectivement le portail. Les deux hypothèses appellent la même conclusion : **il n'y a pas, aujourd'hui, de boucle de retour mesurable entre les producteurs de données et leurs utilisateurs**.
 
@@ -177,42 +176,24 @@ Soit 57 lignes décrivant ce que serait le schéma de la donnée, et zéro ligne
 
 ### 4.2 Distribution des cas
 
-Sur les **1 550 datasets** audités, classification de la première ressource CSV :
+Sur les **1 550 datasets** audités, classification de la première ressource CSV (*) :
 
 | Classification | N | % |
 |----------------|--:|--:|
-| `data_tabular` (≥ 2 lignes de données) | 1 293 | 83,4 % |
-| `data_geo` (≥ 2 lignes + colonne géo) | 134 | 8,6 % |
-| **`schema_only` (dictionnaire de colonnes)** | **114** | **7,4 %** |
+| `data_tabular` — vraies données tabulaires | 1 293 | 83,4 % |
+| `data_geo` — vraies données géolocalisées | 134 | 8,6 % |
+| `schema_only` — uniquement la liste des colonnes | 114 | 7,4 % |
 | `non_csv` / erreur HTTP / sans ressource | 9 | 0,6 % |
 
-Après correction pour les 12 datasets multi-ressources où la 2ᵉ ressource contient les données, le chiffre net de datasets purement schema-only est **102 / 1 550 = 6,6 %**.
+(*) Après correction pour les 12 datasets multi-ressources où la 2ᵉ ressource contient les données réelles, le chiffre net de datasets **purement** schema-only est **102 / 1 550 = 6,6 %**. C'est ce chiffre net qui est retenu dans le reste du rapport.
 
 ### 4.3 La répartition par ministère est très inégale
 
 Le pattern n'est pas uniformément distribué — il est extraordinairement concentré sur certaines administrations :
 
-| Ministère | Datasets | % vraies données | % schema-only |
-|-----------|---------:|----------------:|--------------:|
-| **Ministère des Armées** | 18 | **0,0 %** | **100,0 %** |
-| **Ministère de la Sécurité et de la Protection Civile** | 7 | **0,0 %** | **100,0 %** |
-| Ministère de l'Économie Numérique et de la Transformation Digitale | 23 | 13,0 % | **87,0 %** |
-| Ministère de l'Enseignement Supérieur et de la Recherche | 7 | 28,6 % | 71,4 % |
-| Ministère du Commerce, de l'Artisanat et de la Consommation | 16 | 43,8 % | 56,2 % |
-| Ministère des Transports | 43 | 51,2 % | 48,8 % |
-| Ministère de l'Accès Universel aux Soins et de la Couverture Sanitaire | 17 | 52,9 % | 47,1 % |
-| Ministère de l'Environnement et des Ressources Forestières | 9 | 55,6 % | 44,4 % |
-| Ministère de l'Enseignement Technique, de la Formation Professionnelle | 11 | 63,6 % | 36,4 % |
-| Ministère de l'Enseignement Primaire et Secondaire | 19 | 73,7 % | 26,3 % |
-| Ministère du Tourisme | 14 | 78,6 % | 21,4 % |
-| Ministère de l'Eau et de l'Assainissement | 19 | 78,9 % | 21,1 % |
-| **Ministère de l'Agriculture, de l'Hydraulique et du Développement Rural** | **26** | **100,0 %** | **0,0 %** |
-| **Ministère des Travaux Publics et des Infrastructures** | **5** | **100,0 %** | **0,0 %** |
-| **Ministère de la Planification du Développement et de la Coopération** | **5** | **100,0 %** | **0,0 %** |
-| INSEED (référence) | 479 | 99,6 % | 0,0 % |
-| Banque Mondiale (référence) | 733 | 99,7 % | 0,0 % |
+![Diagramme en barres horizontales montrant le pourcentage de fichiers vides par ministère togolais : Armées et Sécurité à 100 %, Économie Numérique à 87 %, et plusieurs ministères à 0 % (Agriculture, Travaux Publics, Planification)](figures/fig1_ministry_schema_only.png)
 
-**Lecture** : l'INSEED, le Ministère de l'Agriculture et celui des Travaux Publics démontrent que **la publication propre est possible** dans le contexte togolais — leurs datasets ont des données réelles à 99-100 %. À l'inverse, les ministères des Armées, de la Sécurité, de l'Économie Numérique et de l'Enseignement Supérieur publient majoritairement des dictionnaires sans contenu. Le diagnostic n'est donc pas « le portail est creux » mais « **certaines administrations ont publié leurs maquettes au lieu de leurs données** ».
+À titre de référence, **l'INSEED** (479 datasets) et la **Banque Mondiale** (733 datasets) publient toutes deux à plus de 99 % de données réelles — elles ne figurent pas sur le graphique car ce ne sont pas des ministères togolais, mais elles démontrent que **la publication propre est techniquement atteignable** dans le contexte togolais. À l'inverse, les ministères des Armées, de la Sécurité, de l'Économie Numérique et de l'Enseignement Supérieur publient majoritairement des dictionnaires sans contenu. Le diagnostic n'est donc pas « le portail est creux » mais « **certaines administrations ont publié leurs maquettes au lieu de leurs données** ».
 
 ### 4.4 Cas concrets
 
@@ -239,11 +220,11 @@ Le portail [geodata.gouv.tg](https://geodata.gouv.tg) est une SPA React + Leafle
 - `https://api.geodata.gouv.tg/` — API métier propriétaire
 - `https://geoserver.geoportail.gouv.tg/` — instance GeoServer institutionnelle
 
-Le bundle JavaScript de la SPA expose les endpoints suivants : `/get_couche_data`, `/get_couche_metadata`, `/get_couche_glimpse`, `/get_couche_file`, `/regions`, `/prefectures`, `/cantons`, `/communes`, `/dashboard/load`, `/dashboard/prepare`, `/qna/load`, `/qna/interpret`. Aucun de ces endpoints n'est documenté publiquement — un développeur tiers doit reverse-engineerer le bundle minifié pour les utiliser.
+Le bundle JavaScript de la SPA expose les endpoints suivants : `/get_couche_data`, `/get_couche_metadata`, `/get_couche_glimpse`, `/get_couche_file`, `/regions`, `/prefectures`, `/cantons`, `/communes`, `/dashboard/load`, `/dashboard/prepare`, `/qna/load`, `/qna/interpret`. Aucun de ces endpoints n'est documenté publiquement — un développeur tiers doit rétro-ingénierer le bundle minifié à la main pour les utiliser.
 
 ### 5.2 Conformité OGC
 
-Les standards de l'[Open Geospatial Consortium](https://www.ogc.org/) (WMS, WFS, WMTS, WCS, CSW, OGC API) sont les protocoles de référence pour qu'un géoportail soit consommable par n'importe quel outil SIG (QGIS, ArcGIS, gdal, etc.). Résultats des sondes `GetCapabilities` :
+Les standards de l'[Open Geospatial Consortium](https://www.ogc.org/) sont les « prises électriques universelles » d'un géoportail : ils permettent à n'importe quel outil SIG (QGIS, ArcGIS, gdal, etc.) de se brancher dessus. **WMS** sert les fonds de carte, **WFS** les données vectorielles téléchargeables, **WMTS** les tuiles préparées, **WCS** les rasters, **CSW** le catalogue des couches, **OGC API** la version REST moderne de l'ensemble. Résultats des sondes `GetCapabilities` :
 
 | Standard | Statut | Constat |
 |----------|--------|---------|
@@ -276,7 +257,7 @@ Extrait verbatim du document `WMS GetCapabilities` renvoyé par le service publi
 </ContactInformation>
 ```
 
-Il s'agit du placeholder par défaut livré dans le code source de GeoServer ([GitHub source](https://github.com/geoserver/geoserver)) — Claudius Ptolémée est le géographe romain du II siècle. **L'instance a été déployée, mise en ligne, et la fiche n'a jamais été configurée.** C'est le marqueur le plus visible du gap entre installation et exploitation.
+Il s'agit du placeholder par défaut livré dans le code source de GeoServer ([GitHub source](https://github.com/geoserver/geoserver)) — Claudius Ptolémée était un géographe gréco-romain d'Alexandrie au IIᵉ siècle. **L'instance a été déployée, mise en ligne, et la fiche n'a jamais été configurée.** Autrement dit : c'est l'équivalent numérique d'un bâtiment public livré avec encore le panneau « showroom » du fabricant à l'entrée — et qui le porte depuis des années.
 
 ### 5.4 Conclusion partielle
 
@@ -300,7 +281,7 @@ Le Togo a passé l'évaluation OGP Values Check mais n'a jamais formalisé son a
 
 ### 6.3 DCAT-AP — l'absence du standard d'interopérabilité
 
-[DCAT v3](https://www.w3.org/TR/vocab-dcat-3/) est devenu une recommandation W3C en août 2024. Le profil européen [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) est utilisé par 27 portails nationaux européens pour fédérer leurs catalogues sur [data.europa.eu](https://data.europa.eu/en/). Le logiciel udata, qui propulse opendata.gouv.tg comme data.gouv.fr, **expose nativement** un flux DCAT-AP aux URL `/catalog.xml` et `/catalog.json`.
+**DCAT** est le format standard qui permet à deux portails open data de s'échanger automatiquement leurs catalogues, sans qu'un humain ait à recopier quoi que ce soit. [DCAT v3](https://www.w3.org/TR/vocab-dcat-3/) est devenu une recommandation W3C en août 2024 ; son profil européen [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) est utilisé par 27 portails nationaux pour fédérer leurs catalogues sur [data.europa.eu](https://data.europa.eu/en/). Le logiciel udata, qui propulse opendata.gouv.tg comme data.gouv.fr, **expose nativement** un flux DCAT-AP aux URL `/catalog.xml` et `/catalog.json`.
 
 | Endpoint | data.gouv.fr | opendata.gouv.tg |
 |----------|--------------|------------------|
@@ -309,7 +290,7 @@ Le Togo a passé l'évaluation OGP Values Check mais n'a jamais formalisé son a
 | `/.well-known/dcat-ap.xml` | ✅ | ❌ HTTP 404 |
 | `/api/1/site/quality` (auto-évaluation udata) | ✅ | ❌ HTTP 404 |
 
-Les fonctions natives existent dans le code — elles ne sont pas activées. Conséquence : **aucun outil tiers (data.europa.eu, harvester DCAT-AP, validateur Validata) ne peut moissonner automatiquement le portail togolais**. Le coût d'activation est nul (paramètres dans le fichier de configuration udata).
+Les fonctions natives existent dans le code — elles ne sont pas activées. Conséquence : **aucun outil tiers (data.europa.eu, harvester DCAT-AP, validateur Validata) ne peut moissonner automatiquement le portail togolais** (« moissonner » = recopier le catalogue automatiquement à intervalles réguliers, sans intervention humaine). Le coût d'activation est un paramètre de configuration udata.
 
 ### 6.4 5★ Linked Open Data
 
@@ -384,7 +365,7 @@ Trois constats structurent l'écart entre l'apparence et la réalité du disposi
 
 ### 8.1 Le portail a été produit, pas mis en service
 
-L'investissement initial — choix d'un logiciel libre robuste (udata), déploiement, premier remplissage de 1 500 datasets — est manifestement la conséquence d'un projet ponctuel, probablement appuyé par un partenaire technique externe (la concentration des dates de modification entre janvier 2025 et le silence ensuite suggère une livraison-de-projet, non un service continu). **Le passage de la livraison au fonctionnement quotidien — la « phase d'exploitation » — n'a pas eu lieu.** Aucune des fonctions natives qui rendraient le portail crédible (DCAT-AP, /site/quality, harvesters, métriques d'usage) n'a été activée. Aucun cycle de mise à jour n'a été engagé.
+L'investissement initial — choix d'un logiciel libre robuste (udata), déploiement, premier remplissage de 1 500 datasets — est manifestement la conséquence d'un projet ponctuel, probablement appuyé par un partenaire technique externe : la concentration des dates de mise à jour sur une seule fenêtre de quelques mois (décembre 2024 – octobre 2025), suivie d'un silence total, est la signature d'une livraison de projet, pas d'un service continu. **Le passage de la livraison au fonctionnement quotidien — la « phase d'exploitation » — n'a pas eu lieu.** Aucune des fonctions natives qui rendraient le portail crédible (DCAT-AP, `/site/quality`, harvesters, métriques d'usage) n'a été activée. Aucun cycle de mise à jour n'a été engagé.
 
 ### 8.2 La qualité des publications dépend du producteur, pas du portail
 
@@ -402,7 +383,7 @@ Classées par effort de mise en œuvre — du plus rapide au plus structurant. A
 
 ### Quick wins (jours)
 
-1. **Activer le flux DCAT-AP natif d'udata** (`catalog.xml`, `catalog.json`). Cinq lignes de configuration. Effet immédiat : moissonnable par data.europa.eu et tout harvester tiers.
+1. **Activer le flux DCAT-AP natif d'udata** (`catalog.xml`, `catalog.json`). Paramètre de configuration natif du logiciel — aucun développement spécifique requis. Effet immédiat : portail moissonnable par data.europa.eu et tout harvester tiers.
 2. **Activer l'endpoint `/site/quality`** d'udata. Effet : page publique de score qualité par organisation, mécanisme intrinsèque de redevabilité.
 3. **Configurer la fiche de service du GeoServer** : remplacer Claudius Ptolomaeus par les coordonnées du Ministère de l'Économie Numérique. Dix minutes.
 
@@ -414,13 +395,13 @@ Classées par effort de mise en œuvre — du plus rapide au plus structurant. A
 
 ### Moyen terme (trimestre)
 
-7. **Publier une politique de fraîcheur** : pour chaque thème, fixer la périodicité minimale (annuelle pour démographie, mensuelle pour production électrique, trimestrielle pour budget). Inscrire ces engagements dans les conventions producteur-portail.
+7. **Publier une politique de périodicité** : pour chaque thème, fixer la périodicité minimale (annuelle pour démographie, mensuelle pour production électrique, trimestrielle pour budget). Inscrire ces engagements dans les conventions producteur-portail.
 8. **Mettre en place un script CI de validation pré-publication** (Frictionless Data, Validata) qui refuse les CSV sous un seuil de complétude. Un dataset vide ne devrait pas pouvoir être publié.
 9. **Activer les métriques utilisateurs** (vues, téléchargements, suivi) et les exposer sur le portail. Sans signal d'usage, aucun arbitrage de priorité n'est possible.
 
 ### Structurant (année)
 
-10. **Engager l'adhésion à l'Open Government Partnership** (cycle de 12-18 mois) et la signature de l'Open Data Charter. Les deux processus sont gratuits et alignent le Togo sur les engagements régionaux. La rédaction d'un premier National Action Plan force par construction la cartographie des parties prenantes (administrations, société civile, presse, secteur privé) qui aujourd'hui ne se rencontrent pas autour des données.
+10. **Engager l'adhésion à l'Open Government Partnership** (cycle de 12-18 mois) et la signature de l'Open Data Charter. Les deux processus sont gratuits et alignent le Togo sur les engagements régionaux. La rédaction d'un premier National Action Plan oblige mécaniquement à cartographier les parties prenantes (administrations, société civile, presse, secteur privé) qui aujourd'hui ne se rencontrent pas autour des données.
 
 ---
 
