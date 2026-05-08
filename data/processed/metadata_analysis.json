@@ -1,0 +1,433 @@
+{
+  "total_datasets": 1550,
+  "total_resources": 1829,
+  "by_organization": [
+    [
+      "Banque Mondiale",
+      733
+    ],
+    [
+      "Institut National de la Statistique et des Études Économiques et Démographiques",
+      479
+    ],
+    [
+      "Ministère des Transports",
+      43
+    ],
+    [
+      "Humanitarian Data Exchange",
+      38
+    ],
+    [
+      "Ministère de l'Agriculture, de l’Hydraulique  et du Développement Rural ",
+      26
+    ],
+    [
+      "Ministère de l'Économie Numérique et de la Transformation Digitale",
+      23
+    ],
+    [
+      "Ministère de l'Enseignement Primaire et Secondaire",
+      19
+    ],
+    [
+      "Ministère de l’Eau et de l’Assainissement ",
+      19
+    ],
+    [
+      "Ministère des Armées",
+      18
+    ],
+    [
+      "Ministère de  l’Accès Universel aux Soins et de la Couverture Sanitaire",
+      17
+    ],
+    [
+      "Ministère du Commerce, de l'Artisanat et de la Consommation Locale",
+      16
+    ],
+    [
+      " Ministère du Tourisme",
+      14
+    ],
+    [
+      "Ministère de l’Action Sociale, de la Solidarité et de la Promotion de la Femme",
+      13
+    ],
+    [
+      "Ministère des Sports et des Loisirs ",
+      12
+    ],
+    [
+      " Ministère de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage",
+      11
+    ],
+    [
+      "Ministère de l'Économie et des Finances",
+      10
+    ],
+    [
+      "Ministère de l'Environnement et des Ressources Forestières ",
+      9
+    ],
+    [
+      "Ministère de l’Enseignement Supérieur et de la Recherche",
+      7
+    ],
+    [
+      "Ministère de la Sécurité et de la Protection Civile",
+      7
+    ],
+    [
+      "Kaggle",
+      6
+    ],
+    [
+      "Ministère des Travaux Publics et des Infrastructures",
+      5
+    ],
+    [
+      "Ministère de la Planification du Développement et de la Coopération",
+      5
+    ],
+    [
+      "Ministère des Mines et des Ressources Énergétiques",
+      4
+    ],
+    [
+      "Ministère de l’Industrie et de la Promotion des Investissements ",
+      4
+    ],
+    [
+      "Ministère des Ressources Halieutiques, Animales et de la Réglementation de la Transhumance",
+      2
+    ],
+    [
+      "ADOBOE COMLAN JULIEN",
+      1
+    ],
+    [
+      "(no org)",
+      1
+    ],
+    [
+      "Center for Effective Global Action",
+      1
+    ],
+    [
+      "Agence Nationale de la Protection Civile",
+      1
+    ],
+    [
+      "Agence Nationale Pour l'Emploi ",
+      1
+    ],
+    [
+      "Organisation de Coopération et de Développement Economiques ",
+      1
+    ],
+    [
+      "Ministère de la Réforme du Service Public, du Travail et du Dialogue Social",
+      1
+    ],
+    [
+      " Ministère du Développement à la Base, de l'Inclusion Financière, de la Jeunesse et de l'Emploi des Jeunes",
+      1
+    ],
+    [
+      "Ministère des Transports Routiers, Aériens et Ferroviaires",
+      1
+    ],
+    [
+      "Ministère de la Justice et de la Législation",
+      1
+    ]
+  ],
+  "resources_by_organization": {
+    "ADOBOE COMLAN JULIEN": 1,
+    "(no org)": 1,
+    "Banque Mondiale": 733,
+    "Center for Effective Global Action": 1,
+    "Institut National de la Statistique et des Études Économiques et Démographiques": 509,
+    " Ministère de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage": 13,
+    "Ministère de l'Enseignement Primaire et Secondaire": 31,
+    "Ministère de l’Enseignement Supérieur et de la Recherche": 8,
+    "Ministère de l'Économie et des Finances": 20,
+    "Ministère de  l’Accès Universel aux Soins et de la Couverture Sanitaire": 26,
+    "Ministère des Mines et des Ressources Énergétiques": 8,
+    "Ministère de l'Agriculture, de l’Hydraulique  et du Développement Rural ": 51,
+    "Ministère de l’Action Sociale, de la Solidarité et de la Promotion de la Femme": 16,
+    " Ministère du Tourisme": 23,
+    "Ministère des Travaux Publics et des Infrastructures": 7,
+    "Ministère de l'Économie Numérique et de la Transformation Digitale": 26,
+    "Kaggle": 7,
+    "Agence Nationale de la Protection Civile": 1,
+    "Agence Nationale Pour l'Emploi ": 6,
+    "Ministère de l’Industrie et de la Promotion des Investissements ": 8,
+    "Ministère du Commerce, de l'Artisanat et de la Consommation Locale": 24,
+    "Ministère de la Planification du Développement et de la Coopération": 10,
+    "Ministère de l’Eau et de l’Assainissement ": 37,
+    "Ministère des Sports et des Loisirs ": 24,
+    "Ministère de la Sécurité et de la Protection Civile": 7,
+    "Ministère des Armées": 18,
+    "Ministère des Transports": 65,
+    "Organisation de Coopération et de Développement Economiques ": 1,
+    "Ministère de l'Environnement et des Ressources Forestières ": 15,
+    "Humanitarian Data Exchange": 121,
+    "Ministère de la Réforme du Service Public, du Travail et du Dialogue Social": 2,
+    " Ministère du Développement à la Base, de l'Inclusion Financière, de la Jeunesse et de l'Emploi des Jeunes": 2,
+    "Ministère des Transports Routiers, Aériens et Ferroviaires": 2,
+    "Ministère de la Justice et de la Législation": 2,
+    "Ministère des Ressources Halieutiques, Animales et de la Réglementation de la Transhumance": 3
+  },
+  "formats": [
+    [
+      "csv",
+      1820
+    ],
+    [
+      "xlsx",
+      5
+    ],
+    [
+      "xls",
+      2
+    ],
+    [
+      "png",
+      1
+    ],
+    [
+      "zip",
+      1
+    ]
+  ],
+  "licenses": [
+    [
+      "CC-BY-4.0",
+      763
+    ],
+    [
+      "other-open",
+      748
+    ],
+    [
+      "notspecified",
+      26
+    ],
+    [
+      "other-closed",
+      9
+    ],
+    [
+      "PDDL-1.0",
+      1
+    ],
+    [
+      "CC-BY-NC-4.0",
+      1
+    ],
+    [
+      "CC-BY-SA-4.0",
+      1
+    ],
+    [
+      "other-nc",
+      1
+    ]
+  ],
+  "frequencies": [
+    [
+      "irregular",
+      1297
+    ],
+    [
+      "annual",
+      243
+    ],
+    [
+      "monthly",
+      3
+    ],
+    [
+      "daily",
+      2
+    ],
+    [
+      "punctual",
+      1
+    ],
+    [
+      "quinquennial",
+      1
+    ],
+    [
+      "bimonthly",
+      1
+    ],
+    [
+      "quarterly",
+      1
+    ],
+    [
+      "triennial",
+      1
+    ]
+  ],
+  "freshness_buckets": {
+    "6-12 months": 5,
+    "12-24 months": 1545
+  },
+  "freshness_oldest_iso": "2024-12-19T09:22:18.115000+00:00",
+  "freshness_newest_iso": "2025-10-28T08:44:45.861000+00:00",
+  "resources_per_dataset_distribution": {
+    "1": 1355,
+    "2": 177,
+    "3": 4,
+    "4": 4,
+    "0": 2,
+    "6": 2,
+    "11": 2,
+    "7": 1,
+    "9": 1,
+    "37": 1,
+    "5": 1
+  },
+  "datasets_with_spatial_coverage": 1549,
+  "datasets_with_temporal_coverage": 1548,
+  "description_length": {
+    "p25": 355,
+    "median": 507,
+    "p75": 694
+  },
+  "datasets_with_empty_description": 0,
+  "engagement_metrics_total": {
+    "discussions": 0,
+    "followers": 0,
+    "resources_downloads": 0,
+    "reuses": 0,
+    "views": 0
+  },
+  "top_tags": [
+    [
+      "togo",
+      118
+    ],
+    [
+      "flux-nets",
+      67
+    ],
+    [
+      "etablissements",
+      64
+    ],
+    [
+      "repartition",
+      64
+    ],
+    [
+      "sexe",
+      56
+    ],
+    [
+      "region",
+      53
+    ],
+    [
+      "sante",
+      38
+    ],
+    [
+      "aide",
+      34
+    ],
+    [
+      "secondaire",
+      29
+    ],
+    [
+      "batiments",
+      28
+    ],
+    [
+      "agriculture",
+      23
+    ],
+    [
+      "education",
+      22
+    ],
+    [
+      "transport",
+      20
+    ],
+    [
+      "enseignement",
+      19
+    ],
+    [
+      "superieur",
+      19
+    ],
+    [
+      "eleves",
+      18
+    ],
+    [
+      "chomage",
+      18
+    ],
+    [
+      "enseignants",
+      17
+    ],
+    [
+      "formations",
+      17
+    ],
+    [
+      "economie",
+      16
+    ],
+    [
+      "onu",
+      15
+    ],
+    [
+      "statistiques",
+      15
+    ],
+    [
+      "protection-civile-et-action-sociale",
+      15
+    ],
+    [
+      "eau",
+      15
+    ],
+    [
+      "routes",
+      15
+    ],
+    [
+      "capital",
+      14
+    ],
+    [
+      "tourisme",
+      14
+    ],
+    [
+      "primaire",
+      14
+    ],
+    [
+      "scolaires",
+      14
+    ],
+    [
+      "energie",
+      13
+    ]
+  ]
+}

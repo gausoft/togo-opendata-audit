@@ -1,0 +1,492 @@
+{
+  "summary": {
+    "total_audited": 1550,
+    "outcomes": {
+      "data_tabular": 1293,
+      "data_geo": 134,
+      "schema_only": 114,
+      "non_csv": 3,
+      "http_404": 3,
+      "no_resource": 2,
+      "empty": 1
+    },
+    "schema_only_pct": 7.4,
+    "real_data_pct": 92.1,
+    "datasets_multi_resource": 193,
+    "schema_only_in_multi_res": 12
+  },
+  "by_organization": {
+    "Banque Mondiale": {
+      "total": 733,
+      "real_data": 731,
+      "real_data_pct": 99.7,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 2
+    },
+    "Institut National de la Statistique et des Études Économiques et Démographiques": {
+      "total": 479,
+      "real_data": 477,
+      "real_data_pct": 99.6,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 2
+    },
+    "Ministère des Transports": {
+      "total": 43,
+      "real_data": 22,
+      "real_data_pct": 51.2,
+      "schema_only": 21,
+      "schema_only_pct": 48.8,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Humanitarian Data Exchange": {
+      "total": 38,
+      "real_data": 38,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l'Agriculture, de l’Hydraulique  et du Développement Rural ": {
+      "total": 26,
+      "real_data": 26,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l'Économie Numérique et de la Transformation Digitale": {
+      "total": 23,
+      "real_data": 3,
+      "real_data_pct": 13.0,
+      "schema_only": 20,
+      "schema_only_pct": 87.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l'Enseignement Primaire et Secondaire": {
+      "total": 19,
+      "real_data": 14,
+      "real_data_pct": 73.7,
+      "schema_only": 5,
+      "schema_only_pct": 26.3,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l’Eau et de l’Assainissement ": {
+      "total": 19,
+      "real_data": 15,
+      "real_data_pct": 78.9,
+      "schema_only": 4,
+      "schema_only_pct": 21.1,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère des Armées": {
+      "total": 18,
+      "real_data": 0,
+      "real_data_pct": 0.0,
+      "schema_only": 18,
+      "schema_only_pct": 100.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de  l’Accès Universel aux Soins et de la Couverture Sanitaire": {
+      "total": 17,
+      "real_data": 9,
+      "real_data_pct": 52.9,
+      "schema_only": 8,
+      "schema_only_pct": 47.1,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère du Commerce, de l'Artisanat et de la Consommation Locale": {
+      "total": 16,
+      "real_data": 7,
+      "real_data_pct": 43.8,
+      "schema_only": 9,
+      "schema_only_pct": 56.2,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    " Ministère du Tourisme": {
+      "total": 14,
+      "real_data": 11,
+      "real_data_pct": 78.6,
+      "schema_only": 3,
+      "schema_only_pct": 21.4,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l’Action Sociale, de la Solidarité et de la Promotion de la Femme": {
+      "total": 13,
+      "real_data": 12,
+      "real_data_pct": 92.3,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 1
+    },
+    "Ministère des Sports et des Loisirs ": {
+      "total": 12,
+      "real_data": 9,
+      "real_data_pct": 75.0,
+      "schema_only": 3,
+      "schema_only_pct": 25.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    " Ministère de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage": {
+      "total": 11,
+      "real_data": 7,
+      "real_data_pct": 63.6,
+      "schema_only": 4,
+      "schema_only_pct": 36.4,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l'Économie et des Finances": {
+      "total": 10,
+      "real_data": 9,
+      "real_data_pct": 90.0,
+      "schema_only": 1,
+      "schema_only_pct": 10.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l'Environnement et des Ressources Forestières ": {
+      "total": 9,
+      "real_data": 5,
+      "real_data_pct": 55.6,
+      "schema_only": 4,
+      "schema_only_pct": 44.4,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l’Enseignement Supérieur et de la Recherche": {
+      "total": 7,
+      "real_data": 2,
+      "real_data_pct": 28.6,
+      "schema_only": 5,
+      "schema_only_pct": 71.4,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de la Sécurité et de la Protection Civile": {
+      "total": 7,
+      "real_data": 0,
+      "real_data_pct": 0.0,
+      "schema_only": 7,
+      "schema_only_pct": 100.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Kaggle": {
+      "total": 6,
+      "real_data": 6,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère des Travaux Publics et des Infrastructures": {
+      "total": 5,
+      "real_data": 5,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de la Planification du Développement et de la Coopération": {
+      "total": 5,
+      "real_data": 5,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère des Mines et des Ressources Énergétiques": {
+      "total": 4,
+      "real_data": 3,
+      "real_data_pct": 75.0,
+      "schema_only": 1,
+      "schema_only_pct": 25.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de l’Industrie et de la Promotion des Investissements ": {
+      "total": 4,
+      "real_data": 3,
+      "real_data_pct": 75.0,
+      "schema_only": 1,
+      "schema_only_pct": 25.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère des Ressources Halieutiques, Animales et de la Réglementation de la Transhumance": {
+      "total": 2,
+      "real_data": 2,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "ADOBOE COMLAN JULIEN": {
+      "total": 1,
+      "real_data": 0,
+      "real_data_pct": 0.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 1
+    },
+    "(no org)": {
+      "total": 1,
+      "real_data": 0,
+      "real_data_pct": 0.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 1
+    },
+    "Center for Effective Global Action": {
+      "total": 1,
+      "real_data": 0,
+      "real_data_pct": 0.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 1
+    },
+    "Agence Nationale de la Protection Civile": {
+      "total": 1,
+      "real_data": 1,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Agence Nationale Pour l'Emploi ": {
+      "total": 1,
+      "real_data": 1,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Organisation de Coopération et de Développement Economiques ": {
+      "total": 1,
+      "real_data": 1,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère de la Réforme du Service Public, du Travail et du Dialogue Social": {
+      "total": 1,
+      "real_data": 1,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    " Ministère du Développement à la Base, de l'Inclusion Financière, de la Jeunesse et de l'Emploi des Jeunes": {
+      "total": 1,
+      "real_data": 1,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    },
+    "Ministère des Transports Routiers, Aériens et Ferroviaires": {
+      "total": 1,
+      "real_data": 0,
+      "real_data_pct": 0.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 1,
+      "empty_or_tiny_pct": 100.0,
+      "errors_or_other": 0
+    },
+    "Ministère de la Justice et de la Législation": {
+      "total": 1,
+      "real_data": 1,
+      "real_data_pct": 100.0,
+      "schema_only": 0,
+      "schema_only_pct": 0.0,
+      "empty_or_tiny": 0,
+      "empty_or_tiny_pct": 0.0,
+      "errors_or_other": 0
+    }
+  },
+  "schema_only_examples": [
+    {
+      "title": "Données Ouvertes sur les Établissements de Finance au Togo",
+      "slug": "donnees-ouvertes-sur-les-etablissements-de-finance-au-togo",
+      "org": "Ministère de l'Économie et des Finances"
+    },
+    {
+      "title": "Données Ouvertes sur les Établissements des Mines Concessionées   au Togo",
+      "slug": "donnees-ouvertes-sur-les-etablissements-des-mines-concessionees-au-togo",
+      "org": "Ministère des Mines et des Ressources Énergétiques"
+    },
+    {
+      "title": "Données Ouvertes sur les Usines - Établissements en Zone Franche au Togo",
+      "slug": "donnees-ouvertes-sur-les-usines-etablissements-en-zone-franche-au-togo",
+      "org": "Ministère de l’Industrie et de la Promotion des Investissements "
+    },
+    {
+      "title": "Données Ouvertes sur les Retenues d'Eau Collinaires au Togo",
+      "slug": "donnees-ouvertes-sur-les-retenues-deau-collinaires-au-togo",
+      "org": "Ministère de l’Eau et de l’Assainissement "
+    },
+    {
+      "title": "Données Ouvertes sur les Postes d'Eau Autonomes (PEA) au Togo",
+      "slug": "donnees-ouvertes-sur-les-postes-deau-autonomes-pea-au-togo",
+      "org": "Ministère de l’Eau et de l’Assainissement "
+    },
+    {
+      "title": "Données Ouvertes sur les Entreprises - Production d'Eau Potable au Togo",
+      "slug": "donnees-ouvertes-sur-les-entreprises-production-deau-potable-au-togo",
+      "org": "Ministère de l’Eau et de l’Assainissement "
+    },
+    {
+      "title": "Données Ouvertes sur les Digues et Petits Barrages au Togo",
+      "slug": "donnees-ouvertes-sur-les-digues-et-petits-barrages-au-togo",
+      "org": "Ministère de l’Eau et de l’Assainissement "
+    },
+    {
+      "title": "Données Ouvertes sur les Établissements Administratifs au Togo",
+      "slug": "donnees-ouvertes-sur-les-etablissements-administratifs-au-togo",
+      "org": "Ministère du Commerce, de l'Artisanat et de la Consommation Locale"
+    },
+    {
+      "title": "Données Ouvertes sur les Administration - Établissements du Ministère de Sport et Loisir au Togo",
+      "slug": "donnees-ouvertes-sur-les-administration-etablissements-du-ministere-de-sport-et-loisir-au-togo",
+      "org": "Ministère des Sports et des Loisirs "
+    },
+    {
+      "title": "Données Ouvertes sur les  Infrastructures culturelles au Togo",
+      "slug": "donnees-ouvertes-sur-les-infrastructures-culturelles-au-togo-2",
+      "org": "Ministère des Sports et des Loisirs "
+    }
+  ],
+  "empty_examples": [
+    {
+      "title": "Données Ouvertes sur l'Enseignement Supérieur - Établissements au Togo",
+      "slug": "donnees-ouvertes-sur-lenseignement-superieur-etablissements-au-togo-8",
+      "org": "Ministère des Transports Routiers, Aériens et Ferroviaires",
+      "outcome": "empty"
+    }
+  ],
+  "real_data_examples": [
+    {
+      "title": "Données Ouvertes sur les Importations de Marchandises par Economie Déclarante, Résiduel (% des Importations Totales de Marchandises) au TOGO ",
+      "slug": "donnees-ouvertes-sur-les-importations-de-marchandises-par-economie-declarante-residuel-des-importations-totales-de-marchandises-au-togo-1",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes sur les  Importations de Marchandise en  Provenance des Économies du Monde Arabe (% des Importations Totales de Marchandises) au Togo",
+      "slug": "donnees-ouvertes-sur-les-importations-de-marchandise-en-provenance-des-economies-du-monde-arabe-des-importations-totales-de-marchandises-au-togo",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes sur les Importations de Marchandises en Provenance des Economies à Revenu Faible et Intermédiaire Hors Région (% des Importations Totales de Marchandises) au Togo",
+      "slug": "donnees-ouvertes-sur-les-importations-de-marchandises-en-provenance-des-economies-a-revenu-faible-et-intermediaire-hors-region-des-importations-totales-de-marchandises-au-togo-1",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes sur les Importations de Marchandises en Provenance des Économies à Revenu Faible et Intermédiaire du Moyen-Orient et de l'Afrique du Nord (% des Importations Totales de Marchandises) au Togo",
+      "slug": "donnees-ouvertes-sur-les-importations-de-marchandises-en-provenance-des-economies-a-revenu-faible-et-intermediaire-du-moyen-orient-et-de-lafrique-du-nord-des-importations-totales-de-marchandises-au-togo",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes Sur Inscriptions Scolaires, Secondaire, Femmes (% Brut)",
+      "slug": "donnees-ouvertes-sur-inscriptions-scolaires-secondaire-femmes-brut",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes sur les Importations de Marchandises en Provenance des Économies à Revenu Faible et Intermédiaire d'Europe et d'Asie Centrale (% des Importations Totales de Marchandises) au Togo",
+      "slug": "donnees-ouvertes-sur-les-importations-de-marchandises-en-provenance-des-economies-a-revenu-faible-et-intermediaire-deurope-et-dasie-centrale-des-importations-totales-de-marchandises-au-togo",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes sur les Importations de Marchandises en Provenance des Économies à Revenu Faible et Intermédiaire d'Asie du Sud (% des Importations Totales de Marchandises) au Togo",
+      "slug": "donnees-ouvertes-sur-les-importations-de-marchandises-en-provenance-des-economies-a-revenu-faible-et-intermediaire-dasie-du-sud-des-importations-totales-de-marchandises-au-togo",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes sur les Importations de Marchandises en Provenance des Économies à Revenu Faible et Intermédiaire d'Asie de l'Est et du Pacifique (% des Importations Totales de Marchandises) au Togo",
+      "slug": "donnees-ouvertes-sur-les-importations-de-marchandises-en-provenance-des-economies-a-revenu-faible-et-intermediaire-dasie-de-lest-et-du-pacifique-des-importations-totales-de-marchandises-au-togo",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes Sur Inscriptions Scolaires, Secondaire (Brut), Indice De Parité Entre Les Sexes (IPS)",
+      "slug": "donnees-ouvertes-sur-inscriptions-scolaires-secondaire-brut-indice-de-parite-entre-les-sexes-ips",
+      "org": "Banque Mondiale",
+      "lines": 65
+    },
+    {
+      "title": "Données Ouvertes Sur Inscriptions Scolaires, Secondaire (% Net)",
+      "slug": "donnees-ouvertes-sur-inscriptions-scolaires-secondaire-net-2",
+      "org": "Banque Mondiale",
+      "lines": 65
+    }
+  ]
+}
