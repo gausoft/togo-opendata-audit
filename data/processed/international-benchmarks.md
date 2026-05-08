@@ -114,7 +114,7 @@ A simple way to test geodata.gouv.tg: try `GET /geoserver/wms?service=WMS&reques
 
 ### 1.7 FAIR principles (Findable, Accessible, Interoperable, Reusable)
 
-Published in *Scientific Data* in 2016 ([Wilkinson et al., Nature](https://www.nature.com/articles/sdata201618)), the FAIR principles are the dominant data-stewardship reference today, especially in research, but increasingly applied to government data.
+Published in *Scientific Data* in 2016 ([Wilkinson et al., Nature](https://doi.org/10.1038/sdata.2016.18)), the FAIR principles are the dominant data-stewardship reference today, especially in research, but increasingly applied to government data.
 
 - **Findable** — globally unique persistent identifier; rich machine-readable metadata; metadata indexed in a searchable resource.
 - **Accessible** — retrievable via a standardised, open communication protocol; metadata remains accessible even when data is gone.
@@ -129,7 +129,7 @@ FAIR emphasises **machine-actionability** — humans alone cannot keep up with d
 
 ### 1.8 EU Open Data Maturity Model
 
-The European Commission, via [data.europa.eu](https://data.europa.eu/en), publishes an annual Open Data Maturity (ODM) Report assessing **34 countries** (27 EU Member States + 3 EFTA + 4 EU candidate countries: Albania, Bosnia and Herzegovina, Serbia, Ukraine).
+The European Commission, via [data.europa.eu](https://data.europa.eu/en/), publishes an annual Open Data Maturity (ODM) Report assessing **34 countries** (27 EU Member States + 3 EFTA + 4 EU candidate countries: Albania, Bosnia and Herzegovina, Serbia, Ukraine).
 
 **Four dimensions** (stable since 2018):
 
@@ -191,7 +191,7 @@ The Open Data Barometer was the predecessor to the GDB, run by the World Wide We
 
 - The OGDI is one of the sub-indices of the broader [UN E-Government Survey](https://publicadministration.un.org/egovkb), introduced in 2020.
 - **2024 edition** assesses all 193 UN member states.
-- **Key Africa findings:** average African EGDI 0.4247 vs global average; **Mauritius and South Africa** moved up to the "high EGDI" group for the first time. ([UN press release](https://www.un.org/sustainabledevelopment/blog/2024/09/press-release-e-government-survey/) · [E-Gov Survey 2024 PDF](https://desapublications.un.org/sites/default/files/publications/2024-09/(Web%20version)%20E-Government%20Survey%202024%201392024.pdf))
+- **Key Africa findings:** average African EGDI 0.4247 vs global average; **Mauritius and South Africa** moved up to the "high EGDI" group for the first time. ([UN press release](https://www.un.org/sustainabledevelopment/blog/2024/09/press-release-e-government-survey/) · [E-Gov Survey 2024 PDF](https://desapublications.un.org/sites/default/files/publications/2024-09/%28Web%20version%29%20E-Government%20Survey%202024%201392024.pdf))
 
 **Togo's OGDI 2024 score:** **not found** in publicly indexed snippets. The data is downloadable from [publicadministration.un.org/egovkb/Data-Center](https://publicadministration.un.org/egovkb/en-us/data-center) — recommend pulling Togo's row directly.
 
@@ -234,9 +234,9 @@ Comparison table built from official portal pages (May 2026 fetches) and search 
 | **Kenya** | [opendata.go.ke](https://www.opendata.go.ke/) | Originally **CKAN/Socrata**, currently **ArcGIS Hub** (Esri) | not found (ArcGIS Hub does not expose a single counter) | Revival in progress; new Budget Data portal due July 2025 ([OGP commitment KE0034](https://www.opengovpartnership.org/members/kenya/commitments/KE0034/)) | CSV, KML, ZIP, GeoJSON, GeoTIFF, PNG | not found | Yes (ArcGIS REST) | Yes | No |
 | **Ghana** | [data.gov.gh](https://data.gov.gh/) | **CKAN** | **271** catalogues / **912** resources (verified May 2026 homepage counter) | Last-update timestamp not surfaced on homepage | Not surfaced on homepage | **Ghana Open Data Licence** (CC-BY 4.0 equivalent) | CKAN API | Yes | No |
 | **Côte d'Ivoire** | [data.gouv.ci](https://data.gouv.ci/) | proprietary CMS | **177** datasets · 124,357 records · 303 visualisations (verified May 2026 homepage counter) | not surfaced on homepage | not surfaced on homepage | not surfaced on homepage | not advertised | Yes ([CI0024 commitment](https://www.opengovpartnership.org/members/cote-divoire/commitments/CI0024/)) | No |
-| **Senegal** | No single `data.gouv.sn`. Distributed: [geosenegal.gouv.sn](https://www.geosenegal.gouv.sn/), [ansd.sn](https://www.ansd.sn/), Sénégal Ouvert | various | not aggregated | varies | CSV, JSON via ANSD | varies | varies | Yes | No |
+| **Senegal** | No single `data.gouv.sn`. Distributed: [geosenegal.gouv.sn](https://www.geosenegal.gouv.sn/), [ansd.sn](https://web.archive.org/web/2024/https://www.ansd.sn/), Sénégal Ouvert | various | not aggregated | varies | CSV, JSON via ANSD | varies | varies | Yes | No |
 | **Rwanda** | [statistics.gov.rw](https://statistics.gov.rw/) (NSO) + [dev.open-data.risa.gov.rw](https://dev.open-data.risa.gov.rw/) | NSO platform + open data portal in dev | not surfaced | NISR is regularly updated | CSV, XLSX | not surfaced | Yes via NSO data portals | No | No |
-| **Burkina Faso** | [data.gov.bf](https://data.gov.bf/) (BODI) | CKAN | "**Over 200**" reported in 2016; **35** added in 2024 PAGOF cohort ([Expertise France](https://www.expertisefrance.fr/en/actualite?id=730266)) | irregular | varies | not surfaced consistently | CKAN API | Yes ([BF0011 commitment](https://www.opengovpartnership.org/members/burkina-faso/commitments/BF0011/)) | No |
+| **Burkina Faso** | [data.gov.bf](https://data.gov.bf/) (BODI) | CKAN | "**Over 200**" reported in 2016; **35** added in 2024 PAGOF cohort ([Expertise France](https://www.expertisefrance.fr/en/our-news?id=730266)) | irregular | varies | not surfaced consistently | CKAN API | Yes ([BF0011 commitment](https://www.opengovpartnership.org/members/burkina-faso/commitments/BF0011/)) | No |
 | **Nigeria** | [data.gov.ng](http://www.data.gov.ng/) | CKAN | not found (homepage no public counter) | reportedly active, sectoral | CSV, XLSX | not surfaced consistently | CKAN API | Yes | No |
 | **Benin** | [data.gouv.bj](https://data.gouv.bj/) | CKAN-based, custom | could not connect via WebFetch May 2026 (ECONNREFUSED). Documentation states **3 public APIs** + multi-format export (JSON, CSV, Excel) | not surfaced | JSON, CSV, Excel | not surfaced | Yes — explicit `/apis` endpoint | Yes | No |
 
@@ -355,16 +355,16 @@ Aggregate to a single **Togo Open Data Health Score** = mean across datasets.
 
 - **[Frictionless Data](https://frictionlessdata.io/)** — `frictionless validate <data-package.json>` for tabular schema and data validation. Open source.
 - **[GoodTables / Validata](https://validata.fr/)** — French Etalab fork, used to validate datasets against published `tableschema.json` schemas. Directly relevant: Togo could adopt the same tooling.
-- **[CKAN extensions](https://extensions.ckan.org/)** for harvesting and DCAT — ckanext-dcat, ckanext-validation.
+- **[CKAN extensions](https://ecosystem.ckan.org/extension/)** for harvesting and DCAT — ckanext-dcat, ckanext-validation.
 - **[udata](https://github.com/opendatateam/udata)** — same software as Togo's portal; offers a built-in `/site/quality` endpoint with completeness/freshness scores per organisation. Activating this and publishing the leaderboard publicly is itself a transparency win.
-- **[pyDataverse](https://pydataverse.readthedocs.io/) + [pyDCAT](https://pypi.org/project/pydcat/)** for catalogue ingestion and benchmarking against peers.
-- **[INSPIRE / ISO 19115 metadata validators](https://inspire.ec.europa.eu/validator/)** — for the geo portal.
+- **[pyDataverse](https://pydataverse.readthedocs.io/en/latest/) + [pyDCAT](https://pypi.org/project/pydcat/)** for catalogue ingestion and benchmarking against peers.
+- **[INSPIRE / ISO 19115 metadata validators](https://knowledge-base.inspire.ec.europa.eu/news-and-publications/news/discontinuation-inspire-reference-validator-2026-04-01_en)** — for the geo portal.
 - **OGC capabilities checks** — simple curl scripts against `?service=WMS&request=GetCapabilities`, etc.
 
 ### 5.4 Past audits worth citing
 
-- **Cour des comptes (France)** opened its own data on data.gouv.fr from 2014, but a dashboard analysis later showed **75 of those datasets had never been reused**, raising the question of relevance vs publication for publication's sake. ([Etalab DataSession post](https://etalab.gouv.fr/datasession-des-28-et-29-mai-la-cour-des-comptes-approfondit-sa-demarche-dopen-data-et-dopen-gov/) · [Interoperable Europe note](https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/french-court-auditors-c)) — direct precedent for the *"datasets exist but aren't used"* critique.
-- **Etalab's own retrospective on ODM 2021** — public series of blog posts on portal quality and data quality dimensions, structured exactly like a self-audit. ([Etalab ODM 2021 series](https://www.etalab.gouv.fr/retour-sur-lopen-data-maturity-index-2021-qualite-du-portail-de-donnees-3-4))
+- **Cour des comptes (France)** opened its own data on data.gouv.fr from 2014, but a dashboard analysis later showed **75 of those datasets had never been reused**, raising the question of relevance vs publication for publication's sake. ([Etalab DataSession post](https://web.archive.org/web/2024/https://etalab.gouv.fr/datasession-des-28-et-29-mai-la-cour-des-comptes-approfondit-sa-demarche-dopen-data-et-dopen-gov/) · [Interoperable Europe note](https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/french-court-auditors-c)) — direct precedent for the *"datasets exist but aren't used"* critique.
+- **Etalab's own retrospective on ODM 2021** — public series of blog posts on portal quality and data quality dimensions, structured exactly like a self-audit. ([Etalab ODM 2021 series](https://web.archive.org/web/2024/https://www.etalab.gouv.fr/retour-sur-lopen-data-maturity-index-2021-qualite-du-portail-de-donnees-3-4))
 - **EU Open Data Maturity reports 2015–2024** — 10 annual editions, every methodology change documented, all questionnaires published.
 - **Open Data Watch ODIN Biennial 2024/25** — ([ODIN 2024 biennial report](https://odin.opendatawatch.com/Report/biennialReport2024)).
 
@@ -410,7 +410,7 @@ These are knowledge gaps from this dossier that the audit team should resolve di
 - [OGC standards directory](https://www.ogc.org/standards/wms/)
 - [OGC API family](https://ogcapi.ogc.org/)
 - [GO FAIR — FAIR Principles](https://www.go-fair.org/fair-principles/)
-- [Wilkinson et al., FAIR Guiding Principles, Scientific Data 2016](https://www.nature.com/articles/sdata201618)
+- [Wilkinson et al., FAIR Guiding Principles, Scientific Data 2016](https://doi.org/10.1038/sdata.2016.18)
 
 ### Indices and rankings
 - [Global Data Barometer](https://globaldatabarometer.org/)
@@ -454,7 +454,7 @@ These are knowledge gaps from this dossier that the audit team should resolve di
 - [IEEE — Measures for Assessing Data Freshness in Open Data Portals](https://ieeexplore.ieee.org/document/7573684/)
 - [OpenDataMonitor methodology](https://www.opendatamonitor.eu/frontend/web/index.php?r=site/methodology)
 - [data.europa.eu — Guidelines for ensuring quality](https://data.europa.eu/en/academy/guidelines-ensuring-quality-open-data-and-metadata)
-- [Etalab — ODM 2021 retrospective](https://www.etalab.gouv.fr/retour-sur-lopen-data-maturity-index-2021-qualite-du-portail-de-donnees-3-4)
+- [Etalab — ODM 2021 retrospective](https://web.archive.org/web/2024/https://www.etalab.gouv.fr/retour-sur-lopen-data-maturity-index-2021-qualite-du-portail-de-donnees-3-4)
 - [EU HVD Implementing Regulation 2023/138 — summary](https://eur-lex.europa.eu/EN/legal-content/summary/open-data-and-the-reuse-of-public-sector-information.html)
 - [EU — High-Value Datasets factpage](https://digital-strategy.ec.europa.eu/en/news/commission-defines-high-value-datasets-be-made-available-re-use)
 

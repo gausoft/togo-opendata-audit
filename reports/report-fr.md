@@ -300,7 +300,7 @@ Le Togo a passé l'évaluation OGP Values Check mais n'a jamais formalisé son a
 
 ### 6.3 DCAT-AP — l'absence du standard d'interopérabilité
 
-[DCAT v3](https://www.w3.org/TR/vocab-dcat-3/) est devenu une recommandation W3C en août 2024. Le profil européen [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) est utilisé par 27 portails nationaux européens pour fédérer leurs catalogues sur [data.europa.eu](https://data.europa.eu/en). Le logiciel udata, qui propulse opendata.gouv.tg comme data.gouv.fr, **expose nativement** un flux DCAT-AP aux URL `/catalog.xml` et `/catalog.json`.
+[DCAT v3](https://www.w3.org/TR/vocab-dcat-3/) est devenu une recommandation W3C en août 2024. Le profil européen [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) est utilisé par 27 portails nationaux européens pour fédérer leurs catalogues sur [data.europa.eu](https://data.europa.eu/en/). Le logiciel udata, qui propulse opendata.gouv.tg comme data.gouv.fr, **expose nativement** un flux DCAT-AP aux URL `/catalog.xml` et `/catalog.json`.
 
 | Endpoint | data.gouv.fr | opendata.gouv.tg |
 |----------|--------------|------------------|
@@ -326,7 +326,7 @@ Le modèle de [Tim Berners-Lee](https://5stardata.info/) classe les datasets en 
 - 99,5 % des fichiers sont en CSV ouvert → l'essentiel du portail atteint **★★★**, ce qui est correct.
 - Aucune ressource n'expose d'URI réutilisable, ne porte de schéma `tableschema.json`, ni ne pointe vers d'autres datasets RDF → **aucun dataset n'atteint ★★★★ ni ★★★★★**.
 
-C'est le niveau standard de la majorité des portails gouvernementaux mondiaux ; le Togo n'y est pas en retard. C'est en revanche la marche supérieure — celle qu'expérimentent par exemple [data.europa.eu](https://data.europa.eu/en) ou [data.gov.uk](https://www.data.gov.uk/) sur certains datasets — qui n'est pas amorcée.
+C'est le niveau standard de la majorité des portails gouvernementaux mondiaux ; le Togo n'y est pas en retard. C'est en revanche la marche supérieure — celle qu'expérimentent par exemple [data.europa.eu](https://data.europa.eu/en/) ou [data.gov.uk](https://www.data.gov.uk/) sur certains datasets — qui n'est pas amorcée.
 
 ### 6.5 FAIR — auto-évaluation rapide
 
@@ -344,7 +344,7 @@ C'est le niveau standard de la majorité des portails gouvernementaux mondiaux ;
 | **ODIN 2024** (Open Data Inventory, Open Data Watch) | **55 / 100** — rang 95/198 | Juste au-dessus de la médiane mondiale (50,9). Sub-scores : Couverture 55, Ouverture 54. Source : [accueil ODIN](https://odin.opendatawatch.com/) — site SPA, sélectionner « Country Profiles » → Togo → 2024. JSON brut archivé dans ce dépôt : [`data/raw/odin_tgo_2024.json`](https://github.com/gausoft/togo-opendata-audit/blob/main/data/raw/odin_tgo_2024.json). |
 | **Open Data Barometer 4ᵉ édition (2017)** | 16 / 100 — rang 81/115 | Dernière édition couvrant le Togo. Le successeur (Global Data Barometer) ne couvre pas systématiquement le pays |
 | **Global Data Barometer 2ᵉ édition (2025)** | non documenté publiquement | À extraire directement depuis [globaldatabarometer.org/explore](https://globaldatabarometer.org/explore-the-results/) |
-| **UN E-Government Survey 2024 — OGDI** | non documenté publiquement | À extraire de [publicadministration.un.org/egovkb](https://publicadministration.un.org/egovkb/) |
+| **UN E-Government Survey 2024 — OGDI** | non documenté publiquement | À extraire de [publicadministration.un.org/egovkb](https://publicadministration.un.org/egovkb/en-us/) |
 | **Open Data Charter signataire** | ❌ Non | |
 | **OGP membre** | ❌ Non | |
 | **EU Open Data Maturity** | n/a (hors UE) | |

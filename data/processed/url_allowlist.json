@@ -1,0 +1,35 @@
+{
+  "_comment": "URLs whose 'broken' or 'redirect' status is itself the audit finding, NOT a citation bug. Each entry must have a short justification so any third party can audit our reasoning.",
+  "expected_broken": [
+    {"url": "http://www.data.gov.ng/", "reason": "Nigeria national portal offline as of May 2026 — finding §6 (regional portal degradation)"},
+    {"url": "https://api.geodata.gouv.tg/", "reason": "Togo geodata API has no public root/docs page — finding §3 (geodata API undocumented)"},
+    {"url": "https://burkinafaso.opendataforafrica.org/", "reason": "Burkina Faso portal returns HTTP 500 — finding §6 (regional portal degradation)"},
+    {"url": "https://data.gouv.bj/", "reason": "Benin domain unresolvable as of May 2026 — finding §6 (regional portal degradation)"},
+    {"url": "https://dev.open-data.risa.gov.rw/", "reason": "Rwanda dev portal offline — finding §6"},
+    {"url": "https://geoserver.geoportail.gouv.tg/", "reason": "GeoServer root unconfigured — finding §3 (default placeholder install)"},
+    {"url": "https://www.opendata.go.ke/", "reason": "Kenya portal returns 404 as of May 2026 — finding §6"},
+    {"url": "https://www.geosenegal.gouv.sn/", "reason": "Senegal geoportal returns 503 as of May 2026 — finding §6 (regional portal degradation)"},
+    {"url": "https://odin-aim.akroninc.net/api/api/client/", "reason": "ODIN internal backend (used to fetch Togo JSON); not a user-facing reference"},
+    {"url": "https://odin-aim.akroninc.net/api/api/client/GetCountryProfile/2024/TGO", "reason": "ODIN internal backend (POST-only endpoint, GET=405); see data/raw/odin_tgo_2024.json for archived response"},
+    {"url": "https://dl.acm.org/doi/10.1145/2964909", "reason": "ACM Cloudflare anti-bot 403 to scripts; resolves in browsers"},
+    {"url": "https://www.oecd.org/en/publications/2023-oecd-open-useful-and-re-usable-data-ourdata-index_a37f51c3-en.html", "reason": "OECD Cloudflare anti-bot 403 to scripts; resolves in browsers"}
+  ],
+  "expected_redirect": [
+    {"url": "https://doi.org/10.1016/j.giq.2016.02.001", "reason": "DOI canonical; redirects to publisher are normal"},
+    {"url": "https://doi.org/10.1038/sdata.2016.18", "reason": "DOI canonical; Nature cookie banner is normal"},
+    {"url": "https://github.com/gausoft/togo-opendata-audit.git", "reason": "Git clone URL; canonical for cloning, GitHub strips .git for browser"},
+    {"url": "https://web.archive.org/web/2024/https://etalab.gouv.fr/datasession-des-28-et-29-mai-la-cour-des-comptes-approfondit-sa-demarche-dopen-data-et-dopen-gov/", "reason": "Wayback short-form intentionally resolves to nearest snapshot"},
+    {"url": "https://web.archive.org/web/2024/https://webfoundation.org/2016/10/openwashing-anyone/", "reason": "Wayback short-form intentionally resolves to nearest snapshot"},
+    {"url": "https://web.archive.org/web/2024/https://www.ansd.sn/", "reason": "Wayback short-form intentionally resolves to nearest snapshot"},
+    {"url": "https://web.archive.org/web/2024/https://www.etalab.gouv.fr/retour-sur-lopen-data-maturity-index-2021-qualite-du-portail-de-donnees-3-4", "reason": "Wayback short-form intentionally resolves to nearest snapshot"}
+  ],
+  "expected_spa_trap": [
+    {"url": "https://odin.opendatawatch.com/Report/biennialReport2024", "reason": "ODIN is a SPA — JSON archived in data/raw/odin_report_2024.json"},
+    {"url": "https://odin.opendatawatch.com/Report/countryProfileUpdated/TGO?year=2020", "reason": "ODIN SPA — historical profile referenced for trend"},
+    {"url": "https://odin.opendatawatch.com/Report/countryProfileUpdated/TGO?year=2024", "reason": "ODIN SPA — JSON archived in data/raw/odin_tgo_2024.json"},
+    {"url": "https://odin.opendatawatch.com/faq", "reason": "ODIN SPA — methodology FAQ"},
+    {"url": "https://eur-lex.europa.eu/EN/legal-content/summary/open-data-and-the-reuse-of-public-sector-information.html", "reason": "EUR-Lex summary page hydrates with JS; readable in any browser"},
+    {"url": "https://data.europa.eu/en/", "reason": "European Data Portal homepage hydrates client-side; loads fine in any browser"},
+    {"url": "https://pydataverse.readthedocs.io/en/latest/", "reason": "ReadTheDocs SPA; full docs render in browser"}
+  ]
+}

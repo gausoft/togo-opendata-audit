@@ -1,63 +1,49 @@
 # Source verification — May 2026
 
-Audited **143 URLs** cited across all public-facing Markdown files.
+Audited **121 URLs** cited across all public-facing Markdown files.
 
 | Status | Count |
 |---|---:|
-| OK | 99 |
-| REDIRECT | 20 |
-| BROKEN | 15 |
-| SPA_TRAP | 7 |
-| INCOMPLETE | 2 |
+| OK | 96 |
+| BROKEN_ACCEPTED | 11 |
+| SPA_TRAP_ACCEPTED | 7 |
+| REDIRECT_ACCEPTED | 7 |
 
-## URLs requiring attention
+## ❌ Unexpected issues — must be fixed
 
-| Status | HTTP | URL | Title / note | Final URL after redirect |
-|---|---|---|---|---|
-| **BROKEN** | conn-err | `http://www.data.gov.ng/` | <urlopen error [Errno 61] Connection refused> | - |
-| **BROKEN** | 404 | `https://api.geodata.gouv.tg/` | Not Found | - |
-| **REDIRECT** | 200 | `https://data.europa.eu/` | The European Data Portal | https://data.europa.eu/en |
-| **SPA_TRAP** | 200 | `https://data.europa.eu/en` | The European Data Portal | - |
-| **BROKEN** | conn-err | `https://data.gouv.bj/` | <urlopen error [Errno 8] nodename nor servname provided, or  | - |
-| **REDIRECT** | 200 | `https://data.gouv.fr` | data.gouv.fr : Plateforme ouverte des données publiques françaises | https://www.data.gouv.fr/ |
-| **INCOMPLETE** | - | `https://desapublications.un.org/sites/default/files/publications/2024-09/(Web%20version` | malformed URL | - |
-| **BROKEN** | conn-err | `https://dev.open-data.risa.gov.rw/` | <urlopen error [Errno 61] Connection refused> | - |
-| **BROKEN** | 403 | `https://dl.acm.org/doi/10.1145/2964909` | Just a moment... | - |
-| **BROKEN** | 404 | `https://doi-do.github.io/dcat-us/` | Site not found &middot; GitHub Pages | - |
-| **REDIRECT** | 200 | `https://doi.org/10.1016/j.giq.2016.02.001` | Redirecting | https://linkinghub.elsevier.com/retrieve/pii/S0740624X16300132 |
-| **REDIRECT** | 200 | `https://etalab.gouv.fr/datasession-des-28-et-29-mai-la-cour-des-comptes-approfondit-sa-demarche-dopen-data-et-dopen-gov/` | Accueil IA dans l&#x27;État — ALLiaNCE | https://alliance.numerique.gouv.fr/ |
-| **SPA_TRAP** | 202 | `https://eur-lex.europa.eu/EN/legal-content/summary/open-data-and-the-reuse-of-public-sector-information.html` | (no title) | - |
-| **REDIRECT** | 200 | `https://extensions.ckan.org/` | Extension - CKAN Ecosystem Catalog Beta | https://ecosystem.ckan.org/extension/ |
-| **BROKEN** | 404 | `https://geoserver.geoportail.gouv.tg/` | Error 404 - Not Found | - |
-| **INCOMPLETE** | - | `https://github.com/<user` | malformed URL | - |
-| **REDIRECT** | 200 | `https://github.com/gausoft/togo-opendata-audit.git` | GitHub - gausoft/togo-opendata-audit: Independent audit of Togo&#39;s open data  | https://github.com/gausoft/togo-opendata-audit |
-| **BROKEN** | 404 | `https://github.com/geoserver/geoserver/blob/main/src/main/src/main/resources/org/geoserver/global.properties` |  | - |
-| **REDIRECT** | 200 | `https://inspire.ec.europa.eu/validator/` | Discontinuation of the INSPIRE Reference Validator - INSPIRE Knowledge Base | https://knowledge-base.inspire.ec.europa.eu/news-and-publications/news/discontinuation-inspire-reference-validator-2026-04-01_en |
-| **BROKEN** | 404 | `https://odin-aim.akroninc.net/api/api/client/` |  | - |
-| **BROKEN** | 405 | `https://odin-aim.akroninc.net/api/api/client/GetCountryProfile/2024/TGO` |  | - |
-| **SPA_TRAP** | 200 | `https://odin.opendatawatch.com/Report/biennialReport2024` | Open Data Inventory—Global Index of Open Data - Open Data Inventory | - |
-| **SPA_TRAP** | 200 | `https://odin.opendatawatch.com/Report/countryProfileUpdated/TGO?year=2020` | Open Data Inventory—Global Index of Open Data - Open Data Inventory | - |
-| **SPA_TRAP** | 200 | `https://odin.opendatawatch.com/Report/countryProfileUpdated/TGO?year=2024` | Open Data Inventory—Global Index of Open Data - Open Data Inventory | - |
-| **SPA_TRAP** | 200 | `https://odin.opendatawatch.com/faq` | Open Data Inventory—Global Index of Open Data - Open Data Inventory | - |
-| **REDIRECT** | 200 | `https://opendata.gouv.tg` | Accueil - opendata.gouv.tg | https://opendata.gouv.tg/fr/ |
-| **REDIRECT** | 200 | `https://opendata.gouv.tg/` | Accueil - opendata.gouv.tg | https://opendata.gouv.tg/fr/ |
-| **REDIRECT** | 200 | `https://publicadministration.un.org/egovkb/` | EGOVKB / United Nations > Home | https://publicadministration.un.org/egovkb/en-us/ |
-| **REDIRECT** | 200 | `https://pydataverse.readthedocs.io/` | pyDataverse &#8212; pyDataverse 0.3.1 documentation | https://pydataverse.readthedocs.io/en/latest/ |
-| **SPA_TRAP** | 200 | `https://pydataverse.readthedocs.io/en/latest/` | pyDataverse &#8212; pyDataverse 0.3.1 documentation | - |
-| **REDIRECT** | 200 | `https://web.archive.org/web/2024/https://webfoundation.org/2016/10/openwashing-anyone/` | #openwashing…anyone? - World Wide Web Foundation | https://web.archive.org/web/20250119040443/https://webfoundation.org/2016/10/openwashing-anyone/ |
-| **BROKEN** | conn-err | `https://webfoundation.org/2016/10/openwashing-anyone/` | The read operation timed out | - |
-| **BROKEN** | conn-err | `https://www.ansd.sn/` | <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  | - |
-| **REDIRECT** | 200 | `https://www.etalab.gouv.fr/retour-sur-lopen-data-maturity-index-2021-qualite-du-portail-de-donnees-3-4` | Accueil IA dans l&#x27;État — ALLiaNCE | https://alliance.numerique.gouv.fr/ |
-| **REDIRECT** | 200 | `https://www.expertisefrance.fr/en/actualite?id=730266` | Stay up to date on development cooperation / Expertise France | https://www.expertisefrance.fr/en/our-news?id=730266 |
-| **REDIRECT** | 200 | `https://www.nature.com/articles/sdata201618` | The FAIR Guiding Principles for scientific data management and stewardship / Sci | https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=8b16867d-e709-4f03-a6c2-6c0a0a951f45 |
-| **REDIRECT** | 200 | `https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=0a4ccee7-5826-4fdd-b625-e408fe0f1260` | The FAIR Guiding Principles for scientific data management and stewardship / Sci | https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=9a6f4f09-a29f-4916-b1ca-823b851ce768 |
-| **REDIRECT** | 200 | `https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=3a2f5f0b-dbca-482a-9e95-61a994c4a1ca` | The FAIR Guiding Principles for scientific data management and stewardship / Sci | https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=8c3b67ce-d89a-4f85-b71f-048ad85a35a3 |
-| **REDIRECT** | 200 | `https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=9acbca52-3ee8-4d89-abdd-4ef030573743` | The FAIR Guiding Principles for scientific data management and stewardship / Sci | https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=34a1f601-1304-4f75-95f9-04d37f451d48 |
-| **BROKEN** | 403 | `https://www.oecd.org/en/publications/2023-oecd-open-useful-and-re-usable-data-ourdata-index_a37f51c3-en.html` | Just a moment... | - |
-| **BROKEN** | 404 | `https://www.opendata.go.ke/` |  | - |
-| **REDIRECT** | 200 | `https://www.opengovpartnership.org/our-members` | (no title) | https://www.opengovpartnership.org/members/ |
-| **REDIRECT** | 200 | `https://www.opengovpartnership.org/our-members/` | (no title) | https://www.opengovpartnership.org/members/ |
-| **BROKEN** | 403 | `https://www.sciencedirect.com/science/article/abs/pii/S0740624X16300132` | ScienceDirect | - |
+_None. All non-OK URLs are accounted for in `data/processed/url_allowlist.json`._
+
+## ✅ Accepted non-OK URLs (status IS the audit finding)
+
+These URLs are flagged BROKEN/REDIRECT/SPA_TRAP intentionally — their failure mode is itself documented in the report. See `data/processed/url_allowlist.json` for full justification.
+
+| Status | HTTP | URL | Reason |
+|---|---|---|---|
+| BROKEN | conn-err | `http://www.data.gov.ng/` | Nigeria national portal offline as of May 2026 — finding §6 (regional portal degradation) |
+| BROKEN | 404 | `https://api.geodata.gouv.tg/` | Togo geodata API has no public root/docs page — finding §3 (geodata API undocumented) |
+| BROKEN | 500 | `https://burkinafaso.opendataforafrica.org/` | Burkina Faso portal returns HTTP 500 — finding §6 (regional portal degradation) |
+| SPA_TRAP | 200 | `https://data.europa.eu/en/` | European Data Portal homepage hydrates client-side; loads fine in any browser |
+| BROKEN | conn-err | `https://data.gouv.bj/` | Benin domain unresolvable as of May 2026 — finding §6 (regional portal degradation) |
+| BROKEN | conn-err | `https://dev.open-data.risa.gov.rw/` | Rwanda dev portal offline — finding §6 |
+| BROKEN | 403 | `https://dl.acm.org/doi/10.1145/2964909` | ACM Cloudflare anti-bot 403 to scripts; resolves in browsers |
+| REDIRECT | 200 | `https://doi.org/10.1016/j.giq.2016.02.001` | DOI canonical; redirects to publisher are normal |
+| REDIRECT | 200 | `https://doi.org/10.1038/sdata.2016.18` | DOI canonical; Nature cookie banner is normal |
+| SPA_TRAP | 202 | `https://eur-lex.europa.eu/EN/legal-content/summary/open-data-and-the-reuse-of-public-sector-information.html` | EUR-Lex summary page hydrates with JS; readable in any browser |
+| BROKEN | 404 | `https://geoserver.geoportail.gouv.tg/` | GeoServer root unconfigured — finding §3 (default placeholder install) |
+| REDIRECT | 200 | `https://github.com/gausoft/togo-opendata-audit.git` | Git clone URL; canonical for cloning, GitHub strips .git for browser |
+| BROKEN | 404 | `https://odin-aim.akroninc.net/api/api/client/` | ODIN internal backend (used to fetch Togo JSON); not a user-facing reference |
+| BROKEN | 405 | `https://odin-aim.akroninc.net/api/api/client/GetCountryProfile/2024/TGO` | ODIN internal backend (POST-only endpoint, GET=405); see data/raw/odin_tgo_2024.json for archived response |
+| SPA_TRAP | 200 | `https://odin.opendatawatch.com/Report/biennialReport2024` | ODIN is a SPA — JSON archived in data/raw/odin_report_2024.json |
+| SPA_TRAP | 200 | `https://odin.opendatawatch.com/Report/countryProfileUpdated/TGO?year=2020` | ODIN SPA — historical profile referenced for trend |
+| SPA_TRAP | 200 | `https://odin.opendatawatch.com/Report/countryProfileUpdated/TGO?year=2024` | ODIN SPA — JSON archived in data/raw/odin_tgo_2024.json |
+| SPA_TRAP | 200 | `https://odin.opendatawatch.com/faq` | ODIN SPA — methodology FAQ |
+| SPA_TRAP | 200 | `https://pydataverse.readthedocs.io/en/latest/` | ReadTheDocs SPA; full docs render in browser |
+| REDIRECT | 200 | `https://web.archive.org/web/2024/https://etalab.gouv.fr/datasession-des-28-et-29-mai-la-cour-des-comptes-approfondit-sa-demarche-dopen-data-et-dopen-gov/` | Wayback short-form intentionally resolves to nearest snapshot |
+| REDIRECT | 200 | `https://web.archive.org/web/2024/https://webfoundation.org/2016/10/openwashing-anyone/` | Wayback short-form intentionally resolves to nearest snapshot |
+| REDIRECT | 200 | `https://web.archive.org/web/2024/https://www.ansd.sn/` | Wayback short-form intentionally resolves to nearest snapshot |
+| REDIRECT | 200 | `https://web.archive.org/web/2024/https://www.etalab.gouv.fr/retour-sur-lopen-data-maturity-index-2021-qualite-du-portail-de-donnees-3-4` | Wayback short-form intentionally resolves to nearest snapshot |
+| BROKEN | 403 | `https://www.oecd.org/en/publications/2023-oecd-open-useful-and-re-usable-data-ourdata-index_a37f51c3-en.html` | OECD Cloudflare anti-bot 403 to scripts; resolves in browsers |
+| BROKEN | 404 | `https://www.opendata.go.ke/` | Kenya portal returns 404 as of May 2026 — finding §6 |
 
 ## All OK URLs
 
@@ -65,11 +51,9 @@ Audited **143 URLs** cited across all public-facing Markdown files.
 |---|---|---|
 | 200 | `https://5stardata.info/` | Redirecting&hellip; |
 | 200 | `https://5stardata.info/en/` | 5-star Open Data |
-| 200 | `https://alliance.numerique.gouv.fr/` | Accueil IA dans l&#x27;État — ALLiaNCE |
 | 200 | `https://api.worldbank.org/v2/country/TGO/indicator/IQ.SPI.OVRL?format=json` | (no title) |
 | 200 | `https://api.worldbank.org/v2/country/TGO/indicator/IQ.SPI.PIL1?format=json` | (no title) |
 | 200 | `https://blog.okfn.org/2014/03/10/open-washing-the-difference-between-opening-your-data-and-simply-making-them-available/` | “Open-washing” – The difference between opening your data and simply making them |
-| 200 | `https://burkinafaso.opendataforafrica.org/` | Burkina Faso Open Data |
 | 200 | `https://data.europa.eu/en/academy/guidelines-ensuring-quality-open-data-and-metadata` | Guidelines for ensuring quality in open data and metadata / data.europa.eu |
 | 200 | `https://data.europa.eu/en/news-events/news/open-datas-growing-role-insights-oecd-2023-ourdata-index` | Open data&#039;s growing role: Insights from the OECD 2023 OURdata Index / data. |
 | 200 | `https://data.europa.eu/en/open-data-maturity/2024` | Explore 2024 Open Data Maturity Report / EDP |
@@ -82,6 +66,7 @@ Audited **143 URLs** cited across all public-facing Markdown files.
 | 200 | `https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_GTMI&REF_AREA=TGO&format=json` | (no title) |
 | 200 | `https://datanalytics.worldbank.org/SPI/` | Statistical Performance Indicators Data Explorer |
 | 200 | `https://desapublications.un.org/publications/un-e-government-survey-2024` | Public Administration / DESA Publications |
+| 200 | `https://desapublications.un.org/sites/default/files/publications/2024-09/%28Web%20version%29%20E-Government%20Survey%202024%201392024.pdf` | (no title) |
 | 200 | `https://desapublications.un.org/sites/default/files/publications/2024-09/Technical%20Appendix%20%28Web%20version%29%201292024.pdf` | (no title) |
 | 200 | `https://dig.watch/countries/togo` | Togo / Digital Watch Observatory |
 | 200 | `https://digital-strategy.ec.europa.eu/en/news/commission-defines-high-value-datasets-be-made-available-re-use` | Commission defines high-value datasets to be made available for re-use / Shaping |
@@ -113,7 +98,6 @@ Audited **143 URLs** cited across all public-facing Markdown files.
 | 200 | `https://ieeexplore.ieee.org/document/7573684/` | Measures for Assessing the Data Freshness in Open Data Portals / IEEE Conference |
 | 200 | `https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/french-court-auditors-c` | French Court of Auditors to c… / Interoperable Europe Portal |
 | 200 | `https://knowledge-base.inspire.ec.europa.eu/news-and-publications/news/discontinuation-inspire-reference-validator-2026-04-01_en` | Discontinuation of the INSPIRE Reference Validator - INSPIRE Knowledge Base |
-| 200 | `https://linkinghub.elsevier.com/retrieve/pii/S0740624X16300132` | Redirecting |
 | 200 | `https://odin.opendatawatch.com/` | Open Data Inventory—Global Index of Open Data - Open Data Inventory |
 | 200 | `https://ogcapi.ogc.org/` | OGC API |
 | 200 | `https://opendata.gouv.tg/api/1/datasets/` | (no title) |
@@ -135,7 +119,6 @@ Audited **143 URLs** cited across all public-facing Markdown files.
 | 200 | `https://storage.googleapis.com/gdb-2024-analysis/open_data_2nd_edition/gdb-2024-full-data.csv` | (no title) |
 | 200 | `https://storage.googleapis.com/gdb-files/countries/gdb-2021-togo-complete-survey-data.csv` | (no title) |
 | 200 | `https://validata.fr/` | Validata – Accueil |
-| 200 | `https://web.archive.org/web/20250119040443/https://webfoundation.org/2016/10/openwashing-anyone/` | #openwashing…anyone? - World Wide Web Foundation |
 | 200 | `https://worldbank.github.io/SPI/` | Measuring the Statistical Performance of Countries: An Overview of Updates to th |
 | 200 | `https://www.afristat.org/wp-content/uploads/2023/02/TG01_Loi-statistique.pdf` | (no title) |
 | 200 | `https://www.bentley.edu/library/in-the-know/deceptive-practice-openwashing-open-access-data` | The Deceptive Practice of Openwashing with Open Access Data / Bentley University |

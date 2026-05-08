@@ -26,6 +26,8 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; togo-opendata-audit/1.1; +htt
 
 def collect_urls() -> list[str]:
     files = list(ROOT.glob("reports/*.md")) + [ROOT / "README.md"] + list((ROOT / "data" / "processed").glob("*.md"))
+    # Don't scan our own output (avoids feedback loop on flagged URLs)
+    files = [f for f in files if f.name != "source_verification.md"]
     urls = set()
     pat = re.compile(r"https?://[^\s)>\"\\\]]+")
     for f in files:
@@ -137,10 +139,30 @@ def main() -> None:
         print(f"  {i:3d}/{len(urls)}  {status:8s}  {code}  {url[:90]}")
         time.sleep(0.15)
 
+    # Apply allow-list — reclassify intentional findings as ACCEPTED_*
+    allowlist_path = ROOT / "data" / "processed" / "url_allowlist.json"
+    accepted = {"BROKEN": set(), "REDIRECT": set(), "SPA_TRAP": set()}
+    accepted_reasons = {}
+    if allowlist_path.exists():
+        al = json.loads(allowlist_path.read_text())
+        for entry in al.get("expected_broken", []):
+            accepted["BROKEN"].add(entry["url"]); accepted_reasons[entry["url"]] = entry["reason"]
+        for entry in al.get("expected_redirect", []):
+            accepted["REDIRECT"].add(entry["url"]); accepted_reasons[entry["url"]] = entry["reason"]
+        for entry in al.get("expected_spa_trap", []):
+            accepted["SPA_TRAP"].add(entry["url"]); accepted_reasons[entry["url"]] = entry["reason"]
+    for r in rows:
+        if r["status"] in accepted and r["url"] in accepted[r["status"]]:
+            r["accepted"] = True
+            r["reason"] = accepted_reasons[r["url"]]
+        else:
+            r["accepted"] = False
+
     # Summary
     counts = {}
     for r in rows:
-        counts[r["status"]] = counts.get(r["status"], 0) + 1
+        key = r["status"] + ("_ACCEPTED" if r["accepted"] else "")
+        counts[key] = counts.get(key, 0) + 1
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
@@ -150,16 +172,27 @@ def main() -> None:
         for k, v in sorted(counts.items(), key=lambda x: -x[1]):
             f.write(f"| {k} | {v} |\n")
 
-        f.write("\n## URLs requiring attention\n\n")
-        f.write("| Status | HTTP | URL | Title / note | Final URL after redirect |\n")
-        f.write("|---|---|---|---|---|\n")
-        for r in rows:
-            if r["status"] in ("OK",):
-                continue
+        unexpected = [r for r in rows if r["status"] != "OK" and not r["accepted"]]
+        f.write("\n## ❌ Unexpected issues — must be fixed\n\n")
+        if not unexpected:
+            f.write("_None. All non-OK URLs are accounted for in `data/processed/url_allowlist.json`._\n")
+        else:
+            f.write("| Status | HTTP | URL | Title | Final URL after redirect |\n")
+            f.write("|---|---|---|---|---|\n")
+            for r in unexpected:
+                url = r["url"].replace("|", "%7C")
+                final = r["final"].replace("|", "%7C") if r["final"] != "-" else "-"
+                title = r["title"].replace("|", "/").replace("\n", " ")[:80]
+                f.write(f"| **{r['status']}** | {r['code']} | `{url}` | {title} | {final} |\n")
+
+        accepted_rows = [r for r in rows if r["status"] != "OK" and r["accepted"]]
+        f.write("\n## ✅ Accepted non-OK URLs (status IS the audit finding)\n\n")
+        f.write("These URLs are flagged BROKEN/REDIRECT/SPA_TRAP intentionally — their failure mode is itself documented in the report. See `data/processed/url_allowlist.json` for full justification.\n\n")
+        f.write("| Status | HTTP | URL | Reason |\n|---|---|---|---|\n")
+        for r in accepted_rows:
             url = r["url"].replace("|", "%7C")
-            final = r["final"].replace("|", "%7C") if r["final"] != "-" else "-"
-            title = r["title"].replace("|", "/").replace("\n", " ")[:80]
-            f.write(f"| **{r['status']}** | {r['code']} | `{url}` | {title} | {final} |\n")
+            reason = r["reason"].replace("|", "/")
+            f.write(f"| {r['status']} | {r['code']} | `{url}` | {reason} |\n")
 
         f.write("\n## All OK URLs\n\n")
         f.write("| HTTP | URL | Title |\n|---|---|---|\n")
@@ -170,7 +203,10 @@ def main() -> None:
             title = r["title"].replace("|", "/").replace("\n", " ")[:80]
             f.write(f"| {r['code']} | `{url}` | {title} |\n")
 
-    print(f"\n{'='*60}\nSUMMARY: {dict(counts)}\nWrote report to {OUT}")
+    unexpected_n = sum(1 for r in rows if r["status"] != "OK" and not r["accepted"])
+    print(f"\n{'='*60}\nSUMMARY: {dict(counts)}\nUnexpected issues: {unexpected_n}\nWrote report to {OUT}")
+    if unexpected_n:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
