@@ -1,0 +1,112 @@
+{
+  "candidates": [
+    {
+      "url": "https://data.gov.gh/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://data.gov.gh/",
+      "error": null,
+      "body_size": 39762,
+      "title": "Ghana Open Data Initiative | Ghana's Open Data Portal"
+    },
+    {
+      "url": "https://www.data.gov.gh/",
+      "status": 404,
+      "ok": false,
+      "url_final": "https://www.data.gov.gh/",
+      "error": "HTTP 404",
+      "body_size": 1733,
+      "title": "Docksal :: Project missing"
+    }
+  ],
+  "live_base": "https://data.gov.gh/",
+  "fingerprint": {
+    "home_status": 200,
+    "api_root_used": "https://data.gov.gh/",
+    "home_headers": {
+      "Server": "openresty/1.19.9.1",
+      "X-Generator": "Drupal 7 (http://drupal.org)"
+    },
+    "home_body_keywords": {
+      "dkan": true,
+      "drupal": true,
+      "arcgis": true
+    },
+    "api_probes": [
+      {
+        "url": "https://data.gov.gh/api/3/action/status_show",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"https://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html lang=\"en\" dir=\"ltr\">\n<head profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge, chrome=1\">\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"",
+        "error": null
+      },
+      {
+        "url": "https://data.gov.gh/api/3/action/package_search?rows=0",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"https://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html lang=\"en\" dir=\"ltr\">\n<head profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge, chrome=1\">\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"",
+        "error": null
+      },
+      {
+        "url": "https://data.gov.gh/api/1/datasets/?page_size=1",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"https://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html lang=\"en\" dir=\"ltr\">\n<head profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge, chrome=1\">\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"",
+        "error": null
+      },
+      {
+        "url": "https://data.gov.gh/api/1/site/",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"https://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html lang=\"en\" dir=\"ltr\">\n<head profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge, chrome=1\">\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"",
+        "error": null
+      },
+      {
+        "url": "https://data.gov.gh/api/feed/dcat-us/1.1.json",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"https://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html lang=\"en\" dir=\"ltr\">\n<head profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge, chrome=1\">\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"",
+        "error": null
+      },
+      {
+        "url": "https://data.gov.gh/api/search/v1",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"https://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html lang=\"en\" dir=\"ltr\">\n<head profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge, chrome=1\">\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"",
+        "error": null
+      },
+      {
+        "url": "https://data.gov.gh/api/dataset/query",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=UTF-8",
+        "is_json": false,
+        "first_300": "",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gov.gh/api/1.0/data",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"https://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html lang=\"en\" dir=\"ltr\">\n<head profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge, chrome=1\">\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"",
+        "error": null
+      }
+    ],
+    "detected_software": "unknown / proprietary / offline",
+    "detected_via": null
+  }
+}

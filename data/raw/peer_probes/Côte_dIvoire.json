@@ -1,0 +1,107 @@
+{
+  "candidates": [
+    {
+      "url": "https://data.gouv.ci/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://data.gouv.ci/",
+      "error": null,
+      "body_size": 92629,
+      "title": "Portail officiel des données ouvertes"
+    },
+    {
+      "url": "https://www.data.gouv.ci/",
+      "status": null,
+      "ok": false,
+      "url_final": "https://www.data.gouv.ci/",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "body_size": 0,
+      "title": ""
+    }
+  ],
+  "live_base": "https://data.gouv.ci/",
+  "fingerprint": {
+    "home_status": 200,
+    "api_root_used": "https://data.gouv.ci/",
+    "home_headers": {
+      "X-Powered-By": "Express"
+    },
+    "home_body_keywords": {},
+    "api_probes": [
+      {
+        "url": "https://data.gouv.ci/api/3/action/status_show",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gouv.ci/api/3/action/package_search?rows=0",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gouv.ci/api/1/datasets/?page_size=1",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gouv.ci/api/1/site/",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gouv.ci/api/feed/dcat-us/1.1.json",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gouv.ci/api/search/v1",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gouv.ci/api/dataset/query",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://data.gouv.ci/api/1.0/data",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "unknown api endpoint",
+        "error": "HTTP 404"
+      }
+    ],
+    "detected_software": "unknown / proprietary / offline",
+    "detected_via": null
+  }
+}

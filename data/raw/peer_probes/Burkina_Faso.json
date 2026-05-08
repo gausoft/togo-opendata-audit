@@ -1,0 +1,114 @@
+{
+  "candidates": [
+    {
+      "url": "https://www.data.gov.bf/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.data.gov.bf/",
+      "error": null,
+      "body_size": 68940,
+      "title": "Modern Data Platform - Data Lake & Analytics"
+    },
+    {
+      "url": "https://data.gov.bf/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://data.gov.bf/",
+      "error": null,
+      "body_size": 68940,
+      "title": "Modern Data Platform - Data Lake & Analytics"
+    },
+    {
+      "url": "https://burkinafaso.opendataforafrica.org/",
+      "status": 500,
+      "ok": false,
+      "url_final": "https://burkinafaso.opendataforafrica.org/",
+      "error": "HTTP 500",
+      "body_size": 75,
+      "title": ""
+    }
+  ],
+  "live_base": "https://www.data.gov.bf/",
+  "fingerprint": {
+    "home_status": 200,
+    "api_root_used": "https://www.data.gov.bf/",
+    "home_headers": {},
+    "home_body_keywords": {},
+    "api_probes": [
+      {
+        "url": "https://www.data.gov.bf/api/3/action/status_show",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      },
+      {
+        "url": "https://www.data.gov.bf/api/3/action/package_search?rows=0",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      },
+      {
+        "url": "https://www.data.gov.bf/api/1/datasets/?page_size=1",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      },
+      {
+        "url": "https://www.data.gov.bf/api/1/site/",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      },
+      {
+        "url": "https://www.data.gov.bf/api/feed/dcat-us/1.1.json",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      },
+      {
+        "url": "https://www.data.gov.bf/api/search/v1",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      },
+      {
+        "url": "https://www.data.gov.bf/api/dataset/query",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      },
+      {
+        "url": "https://www.data.gov.bf/api/1.0/data",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Modern Data Platform - Data Lake & Analytics</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" hre",
+        "error": null
+      }
+    ],
+    "detected_software": "unknown / proprietary / offline",
+    "detected_via": null
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "candidates": [
+    {
+      "url": "https://data.gov.ng/",
+      "status": null,
+      "ok": false,
+      "url_final": "https://data.gov.ng/",
+      "error": "<urlopen error [Errno 61] Connection refused>",
+      "body_size": 0,
+      "title": ""
+    },
+    {
+      "url": "http://www.data.gov.ng/",
+      "status": null,
+      "ok": false,
+      "url_final": "http://www.data.gov.ng/",
+      "error": "<urlopen error [Errno 61] Connection refused>",
+      "body_size": 0,
+      "title": ""
+    },
+    {
+      "url": "https://nigeria.opendataforafrica.org/",
+      "status": 500,
+      "ok": false,
+      "url_final": "https://nigeria.opendataforafrica.org/",
+      "error": "HTTP 500",
+      "body_size": 75,
+      "title": ""
+    },
+    {
+      "url": "https://nigeriadata.gov.ng/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://nigeriadata.gov.ng/",
+      "error": null,
+      "body_size": 3525,
+      "title": "Integrated Data Sharing Portal"
+    }
+  ],
+  "live_base": "https://nigeriadata.gov.ng/",
+  "fingerprint": {
+    "home_status": 200,
+    "api_root_used": "https://nigeriadata.gov.ng/",
+    "home_headers": {
+      "Server": "cloudflare"
+    },
+    "home_body_keywords": {},
+    "api_probes": [
+      {
+        "url": "https://nigeriadata.gov.ng/api/3/action/status_show",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      },
+      {
+        "url": "https://nigeriadata.gov.ng/api/3/action/package_search?rows=0",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      },
+      {
+        "url": "https://nigeriadata.gov.ng/api/1/datasets/?page_size=1",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      },
+      {
+        "url": "https://nigeriadata.gov.ng/api/1/site/",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      },
+      {
+        "url": "https://nigeriadata.gov.ng/api/feed/dcat-us/1.1.json",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      },
+      {
+        "url": "https://nigeriadata.gov.ng/api/search/v1",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      },
+      {
+        "url": "https://nigeriadata.gov.ng/api/dataset/query",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      },
+      {
+        "url": "https://nigeriadata.gov.ng/api/1.0/data",
+        "status": 200,
+        "ok": true,
+        "content_type": "text/html",
+        "is_json": false,
+        "first_300": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><link rel=\"icon\" href=\"logo.png\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"\"/><link rel=\"apple-touch-icon\" href=\"logo19",
+        "error": null
+      }
+    ],
+    "detected_software": "unknown / proprietary / offline",
+    "detected_via": null
+  }
+}

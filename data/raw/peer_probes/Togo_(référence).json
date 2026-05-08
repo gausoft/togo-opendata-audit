@@ -1,0 +1,108 @@
+{
+  "candidates": [
+    {
+      "url": "https://opendata.gouv.tg/fr/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://opendata.gouv.tg/fr/",
+      "error": null,
+      "body_size": 200000,
+      "title": "Accueil - opendata.gouv.tg "
+    }
+  ],
+  "live_base": "https://opendata.gouv.tg/fr/",
+  "fingerprint": {
+    "home_status": 200,
+    "api_root_used": "https://opendata.gouv.tg/",
+    "home_headers": {
+      "Server": "nginx/1.18.0 (Ubuntu)"
+    },
+    "home_body_keywords": {
+      "udata": true
+    },
+    "api_probes": [
+      {
+        "url": "https://opendata.gouv.tg/api/3/action/status_show",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html><html lang=\"\" data-fr-scheme=\"light\" data-fr-theme=\"light\">\n\n<head>\n    \n    \n    \n\n\n\n\n\n<meta charset=\"utf-8\" />\n<title>Accueil - opendata.gouv.tg </title>\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Accueil - opendata.gouv.tg \" />\n<link rel=\"autho",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://opendata.gouv.tg/api/3/action/package_search?rows=0",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html><html lang=\"\" data-fr-scheme=\"light\" data-fr-theme=\"light\">\n\n<head>\n    \n    \n    \n\n\n\n\n\n<meta charset=\"utf-8\" />\n<title>Accueil - opendata.gouv.tg </title>\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Accueil - opendata.gouv.tg \" />\n<link rel=\"autho",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://opendata.gouv.tg/api/1/datasets/?page_size=1",
+        "status": 200,
+        "ok": true,
+        "content_type": "application/json",
+        "is_json": true,
+        "first_300": "{\"data\": [{\"acronym\": \"test\", \"archived\": null, \"badges\": [], \"contact_point\": null, \"created_at\": \"2025-10-28T08:44:18.964000+00:00\", \"deleted\": null, \"description\": \"test test\", \"extras\": {}, \"frequency\": \"daily\", \"frequency_date\": \"2025-10-29T08:44:06+00:00\", \"harvest\": null, \"id\": \"6900826223863",
+        "error": null
+      },
+      {
+        "url": "https://opendata.gouv.tg/api/1/site/",
+        "status": 200,
+        "ok": true,
+        "content_type": "application/json",
+        "is_json": true,
+        "first_300": "{\"id\": \"default\", \"metrics\": {\"datasets\": 1550, \"discussions\": 0, \"followers\": 0, \"harvesters\": 0, \"max_dataset_followers\": 0, \"max_dataset_reuses\": 0, \"max_org_datasets\": 733, \"max_org_followers\": 0, \"max_org_reuses\": 0, \"max_reuse_datasets\": 0, \"max_reuse_followers\": 0, \"organizations\": 42, \"publi",
+        "error": null
+      },
+      {
+        "url": "https://opendata.gouv.tg/api/feed/dcat-us/1.1.json",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html><html lang=\"\" data-fr-scheme=\"light\" data-fr-theme=\"light\">\n\n<head>\n    \n    \n    \n\n\n\n\n\n<meta charset=\"utf-8\" />\n<title>Accueil - opendata.gouv.tg </title>\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Accueil - opendata.gouv.tg \" />\n<link rel=\"autho",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://opendata.gouv.tg/api/search/v1",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html><html lang=\"\" data-fr-scheme=\"light\" data-fr-theme=\"light\">\n\n<head>\n    \n    \n    \n\n\n\n\n\n<meta charset=\"utf-8\" />\n<title>Accueil - opendata.gouv.tg </title>\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Accueil - opendata.gouv.tg \" />\n<link rel=\"autho",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://opendata.gouv.tg/api/dataset/query",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html><html lang=\"\" data-fr-scheme=\"light\" data-fr-theme=\"light\">\n\n<head>\n    \n    \n    \n\n\n\n\n\n<meta charset=\"utf-8\" />\n<title>Accueil - opendata.gouv.tg </title>\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Accueil - opendata.gouv.tg \" />\n<link rel=\"autho",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://opendata.gouv.tg/api/1.0/data",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html><html lang=\"\" data-fr-scheme=\"light\" data-fr-theme=\"light\">\n\n<head>\n    \n    \n    \n\n\n\n\n\n<meta charset=\"utf-8\" />\n<title>Accueil - opendata.gouv.tg </title>\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Accueil - opendata.gouv.tg \" />\n<link rel=\"autho",
+        "error": "HTTP 404"
+      }
+    ],
+    "detected_software": "udata",
+    "detected_via": "https://opendata.gouv.tg/api/1/datasets/?page_size=1"
+  },
+  "dataset_metrics": {
+    "count": 1550,
+    "most_recent_1": {
+      "title": "test ",
+      "last_update": "2025-10-28T08:44:45.856000+00:00",
+      "created_at": "2025-10-28T08:44:18.964000+00:00"
+    }
+  }
+}

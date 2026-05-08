@@ -1,0 +1,32 @@
+{
+  "candidates": [
+    {
+      "url": "https://data.gouv.bj/",
+      "status": null,
+      "ok": false,
+      "url_final": "https://data.gouv.bj/",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "body_size": 0,
+      "title": ""
+    },
+    {
+      "url": "https://www.data.gouv.bj/",
+      "status": null,
+      "ok": false,
+      "url_final": "https://www.data.gouv.bj/",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "body_size": 0,
+      "title": ""
+    },
+    {
+      "url": "https://benin.opendataforafrica.org/",
+      "status": 500,
+      "ok": false,
+      "url_final": "https://benin.opendataforafrica.org/",
+      "error": "HTTP 500",
+      "body_size": 75,
+      "title": ""
+    }
+  ],
+  "live_base": null
+}

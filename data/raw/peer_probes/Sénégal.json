@@ -1,0 +1,125 @@
+{
+  "candidates": [
+    {
+      "url": "https://senegal.opendataforafrica.org/",
+      "status": 500,
+      "ok": false,
+      "url_final": "https://senegal.opendataforafrica.org/",
+      "error": "HTTP 500",
+      "body_size": 75,
+      "title": ""
+    },
+    {
+      "url": "https://www.data.gouv.sn/",
+      "status": null,
+      "ok": false,
+      "url_final": "https://www.data.gouv.sn/",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "body_size": 0,
+      "title": ""
+    },
+    {
+      "url": "https://data.gouv.sn/",
+      "status": null,
+      "ok": false,
+      "url_final": "https://data.gouv.sn/",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "body_size": 0,
+      "title": ""
+    },
+    {
+      "url": "https://www.geosenegal.gouv.sn/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.geosenegal.gouv.sn/",
+      "error": null,
+      "body_size": 32524,
+      "title": "Géo Sénégal - Infrastructure nationale de gestion des données géographiques"
+    }
+  ],
+  "live_base": "https://www.geosenegal.gouv.sn/",
+  "fingerprint": {
+    "home_status": 200,
+    "api_root_used": "https://www.geosenegal.gouv.sn/",
+    "home_headers": {
+      "Server": "Apache"
+    },
+    "home_body_keywords": {},
+    "api_probes": [
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/3/action/status_show",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"fr\" class=\"ltr fr no-js\">\n<head>\n<base href=\"https://www.geosenegal.gouv.sn/\">\n\t<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);/*]]>*/</script>\n\t<title>Erreur 404 - Géo Sén",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/3/action/package_search?rows=0",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"fr\" class=\"ltr fr no-js\">\n<head>\n<base href=\"https://www.geosenegal.gouv.sn/\">\n\t<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);/*]]>*/</script>\n\t<title>Erreur 404 - Géo Sén",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/1/datasets/?page_size=1",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"fr\" class=\"ltr fr no-js\">\n<head>\n<base href=\"https://www.geosenegal.gouv.sn/\">\n\t<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);/*]]>*/</script>\n\t<title>Erreur 404 - Géo Sén",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/1/site/",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"fr\" class=\"ltr fr no-js\">\n<head>\n<base href=\"https://www.geosenegal.gouv.sn/\">\n\t<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);/*]]>*/</script>\n\t<title>Erreur 404 - Géo Sén",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/feed/dcat-us/1.1.json",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=iso-8859-1",
+        "is_json": false,
+        "first_300": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n<p>Additionally, a 404 Not Found\nerror was encountered while trying to use an E",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/search/v1",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"fr\" class=\"ltr fr no-js\">\n<head>\n<base href=\"https://www.geosenegal.gouv.sn/\">\n\t<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);/*]]>*/</script>\n\t<title>Erreur 404 - Géo Sén",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/dataset/query",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"fr\" class=\"ltr fr no-js\">\n<head>\n<base href=\"https://www.geosenegal.gouv.sn/\">\n\t<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);/*]]>*/</script>\n\t<title>Erreur 404 - Géo Sén",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://www.geosenegal.gouv.sn/api/1.0/data",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=iso-8859-1",
+        "is_json": false,
+        "first_300": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n<p>Additionally, a 404 Not Found\nerror was encountered while trying to use an E",
+        "error": "HTTP 404"
+      }
+    ],
+    "detected_software": "unknown / proprietary / offline",
+    "detected_via": null
+  }
+}

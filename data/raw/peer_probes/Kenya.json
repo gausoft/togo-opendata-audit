@@ -1,0 +1,125 @@
+{
+  "candidates": [
+    {
+      "url": "https://www.opendata.go.ke/",
+      "status": 404,
+      "ok": false,
+      "url_final": "https://www.opendata.go.ke/",
+      "error": "HTTP 404",
+      "body_size": 30,
+      "title": ""
+    },
+    {
+      "url": "https://opendata.go.ke/",
+      "status": null,
+      "ok": false,
+      "url_final": "https://opendata.go.ke/",
+      "error": "<urlopen error timed out>",
+      "body_size": 0,
+      "title": ""
+    },
+    {
+      "url": "https://kenya.opendataforafrica.org/",
+      "status": 500,
+      "ok": false,
+      "url_final": "https://kenya.opendataforafrica.org/",
+      "error": "HTTP 500",
+      "body_size": 75,
+      "title": ""
+    },
+    {
+      "url": "https://kenya-kcbs.opendata.arcgis.com/",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://kenya-kcbs.opendata.arcgis.com/",
+      "error": null,
+      "body_size": 14818,
+      "title": "ArcGIS Hub"
+    }
+  ],
+  "live_base": "https://kenya-kcbs.opendata.arcgis.com/",
+  "fingerprint": {
+    "home_status": 200,
+    "api_root_used": "https://kenya-kcbs.opendata.arcgis.com/",
+    "home_headers": {},
+    "home_body_keywords": {
+      "arcgis": true
+    },
+    "api_probes": [
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/3/action/status_show",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/3/action/status_show</pre>\n</body>\n</html>\n",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/3/action/package_search?rows=0",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/3/action/package_search</pre>\n</body>\n</html>\n",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/1/datasets/?page_size=1",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/1/datasets/</pre>\n</body>\n</html>\n",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/1/site/",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/1/site/</pre>\n</body>\n</html>\n",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/feed/dcat-us/1.1.json",
+        "status": 404,
+        "ok": false,
+        "content_type": "application/json; charset=utf-8",
+        "is_json": true,
+        "first_300": "{\"error\":\"Domain record(s) not found :: A domain record with hostname = kenya-kcbs.opendata.arcgis.com does not exist :: 404\"}",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/search/v1",
+        "status": 401,
+        "ok": false,
+        "content_type": "application/json; charset=utf-8",
+        "is_json": true,
+        "first_300": "{\"message\":\"private org id for kenya-kcbs.opendata.arcgis.com is not accessible\",\"error\":\"Unauthorized\",\"statusCode\":401}",
+        "error": "HTTP 401"
+      },
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/dataset/query",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/dataset/query</pre>\n</body>\n</html>\n",
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://kenya-kcbs.opendata.arcgis.com/api/1.0/data",
+        "status": 404,
+        "ok": false,
+        "content_type": "text/html; charset=utf-8",
+        "is_json": false,
+        "first_300": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/1.0/data</pre>\n</body>\n</html>\n",
+        "error": "HTTP 404"
+      }
+    ],
+    "detected_software": "unknown / proprietary / offline",
+    "detected_via": null
+  }
+}
