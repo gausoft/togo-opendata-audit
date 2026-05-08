@@ -3,7 +3,7 @@
 **A quantitative diagnosis and international benchmark of [opendata.gouv.tg](https://opendata.gouv.tg) and [geodata.gouv.tg](https://geodata.gouv.tg)**
 
 > Independent report — May 2026
-> Author: Gauthier Eholoum — Lomé, Togo
+> Author: [@gausoft](https://github.com/gausoft) (Lomé, Togo)
 > Methodology and raw data: [github.com/gausoft/togo-opendata-audit](https://github.com/gausoft/togo-opendata-audit)
 > Licence: CC-BY 4.0
 
@@ -464,10 +464,9 @@ python3 scripts/03_content_audit.py      # ~14 min
 
 ### C. Author and contact
 
-- **Gauthier Eholoum** — Lomé, Togo
-- gauthier.eholoum@gmail.com
-- [github.com/gausoft](https://github.com/gausoft)
+- **[@gausoft](https://github.com/gausoft)** — independent author based in Lomé, Togo
+- Flag a correction or contribute: [GitHub issues](https://github.com/gausoft/togo-opendata-audit/issues)
 
 ---
 
-*Report released under CC-BY 4.0. Cite as:* Eholoum, G. (2026). *Independent audit of Togo's open data portal.* GitHub: gausoft/togo-opendata-audit.
+*Report released under CC-BY 4.0. Cite as:* @gausoft (2026). *Independent audit of Togo's open data portal.* GitHub: gausoft/togo-opendata-audit.

@@ -58,4 +58,4 @@ Togo runs the same software as France's data.gouv.fr (74,000 datasets), publishe
 
 ## Acknowledgements
 
-Compiled by [Gauthier Eholoum](https://github.com/gausoft) — Lomé, Togo. The intent of this audit is **constructive**: every finding is paired with a benchmark and a recommendation. Government engagement is welcomed.
+Compiled by [@gausoft](https://github.com/gausoft) — independent author based in Lomé, Togo. The intent of this audit is **constructive**: every finding is paired with a benchmark and a recommendation. Government engagement is welcomed via [GitHub issues](https://github.com/gausoft/togo-opendata-audit/issues).

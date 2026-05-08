@@ -3,7 +3,7 @@ marp: true
 theme: slate
 paginate: true
 title: Audit indépendant de l'open data togolais
-author: Gauthier Eholoum
+author: "@gausoft"
 date: Mai 2026
 ---
 
@@ -12,7 +12,7 @@ date: Mai 2026
 
 **Diagnostic chiffré et benchmark international**
 
-Mai 2026 — Gauthier Eholoum, Lomé
+Mai 2026 — par [@gausoft](https://github.com/gausoft) (Lomé)
 
 [github.com/gausoft/togo-opendata-audit](https://github.com/gausoft/togo-opendata-audit)
 
@@ -228,10 +228,10 @@ L'écart se rattrape :
 
 ## Contact
 
-**Gauthier Eholoum** — Lomé, Togo
+**[@gausoft](https://github.com/gausoft)** — auteur indépendant, Lomé
 
-✉️ gauthier.eholoum@gmail.com
-🐙 [github.com/gausoft](https://github.com/gausoft)
+🐙 [github.com/gausoft/togo-opendata-audit](https://github.com/gausoft/togo-opendata-audit)
+🛠️ [Issues GitHub](https://github.com/gausoft/togo-opendata-audit/issues) pour corriger ou contribuer
 
 *Toute correction factuelle d'une administration sera intégrée en v1.1 du rapport.*
 
