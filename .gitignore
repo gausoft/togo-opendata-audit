@@ -1,6 +1,19 @@
+# Python
 __pycache__/
 *.pyc
+
+# Editor / OS
 .DS_Store
+
+# Virtualenv
 .venv/
+
+# Node
 node_modules/
+
+# Local Claude Code / tooling caches (not part of the audit)
 .ruff_cache/
+.code-review-graph/
+
+# Local-only working space (drafts, notes — not for public repo)
+private/

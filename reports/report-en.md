@@ -1,6 +1,6 @@
 # Independent Audit of Togo's Open Data Portal
 
-**A quantitative diagnosis and international benchmark of [opendata.gouv.tg](https://opendata.gouv.tg) and [geodata.gouv.tg](https://geodata.gouv.tg)**
+**A quantitative diagnosis and international benchmark of [opendata.gouv.tg](https://opendata.gouv.tg/fr/) and [geodata.gouv.tg](https://geodata.gouv.tg)**
 
 > Independent report — May 2026
 > Author: [@gausoft](https://github.com/gausoft) (Lomé, Togo)
@@ -11,7 +11,7 @@
 
 ## Executive summary
 
-On paper, Togo has a complete open-data infrastructure: a general-purpose portal ([opendata.gouv.tg](https://opendata.gouv.tg)) running on **udata** — the same open-source software that powers France's [data.gouv.fr](https://data.gouv.fr) — and a geoportal ([geodata.gouv.tg](https://geodata.gouv.tg)) backed by an institutional GeoServer instance. The tools are in place. The international standards that would lend them credibility have existed for a decade (Open Data Charter, DCAT-AP, FAIR, 5★ Linked Open Data). And yet.
+On paper, Togo has a complete open-data infrastructure: a general-purpose portal ([opendata.gouv.tg](https://opendata.gouv.tg/fr/)) running on **udata** — the same open-source software that powers France's [data.gouv.fr](https://www.data.gouv.fr/) — and a geoportal ([geodata.gouv.tg](https://geodata.gouv.tg)) backed by an institutional GeoServer instance. The tools are in place. The international standards that would lend them credibility have existed for a decade (Open Data Charter, DCAT-AP, FAIR, 5★ Linked Open Data). And yet.
 
 This audit, conducted on **100% of the 1,550 published datasets** and cross-referenced with **ten peer portals** (France, UK, Kenya, Ghana, Côte d'Ivoire, Senegal, Rwanda, Burkina Faso, Nigeria, Benin), reveals a striking gap between the appearance and the substance of the system.
 
@@ -276,7 +276,7 @@ Verbatim excerpt from the WMS GetCapabilities returned by the Togolese public se
 </ContactInformation>
 ```
 
-This is the placeholder shipped by default with GeoServer ([source](https://github.com/geoserver/geoserver/blob/main/src/main/src/main/resources/org/geoserver/global.properties)) — Claudius Ptolemaeus is the 2nd-century Roman geographer. **The instance was deployed, brought online, and the contact card was never configured.** It is the most visible marker of the gap between installation and operation.
+This is the placeholder shipped by default with GeoServer ([source](https://github.com/geoserver/geoserver)) — Claudius Ptolemaeus is the 2nd-century Roman geographer. **The instance was deployed, brought online, and the contact card was never configured.** It is the most visible marker of the gap between installation and operation.
 
 ### 5.4 Sub-conclusion
 
@@ -300,7 +300,7 @@ Togo passed the OGP Values Check assessment but never formalised membership, des
 
 ### 6.3 DCAT-AP — the missing interoperability standard
 
-[DCAT v3](https://www.w3.org/TR/vocab-dcat-3/) became a W3C Recommendation in August 2024. The European profile [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) is used by 27 national portals to federate their catalogues on [data.europa.eu](https://data.europa.eu/). The udata software, which powers both opendata.gouv.tg and data.gouv.fr, **natively exposes** a DCAT-AP feed at `/catalog.xml` and `/catalog.json`.
+[DCAT v3](https://www.w3.org/TR/vocab-dcat-3/) became a W3C Recommendation in August 2024. The European profile [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) is used by 27 national portals to federate their catalogues on [data.europa.eu](https://data.europa.eu/en). The udata software, which powers both opendata.gouv.tg and data.gouv.fr, **natively exposes** a DCAT-AP feed at `/catalog.xml` and `/catalog.json`.
 
 | Endpoint | data.gouv.fr | opendata.gouv.tg |
 |----------|--------------|------------------|
@@ -326,7 +326,7 @@ opendata.gouv.tg assessment:
 - 99.5% of files are open CSV → most of the portal reaches **★★★** (which is fine).
 - No resource exposes a reusable URI, ships a `tableschema.json`, or links to other RDF datasets → **no dataset reaches ★★★★ or ★★★★★**.
 
-This is the standard level of most government portals worldwide; Togo is not behind here. The next step up — exemplified by [data.europa.eu](https://data.europa.eu/) and parts of [data.gov.uk](https://www.data.gov.uk/) — is not yet started.
+This is the standard level of most government portals worldwide; Togo is not behind here. The next step up — exemplified by [data.europa.eu](https://data.europa.eu/en) and parts of [data.gov.uk](https://www.data.gov.uk/) — is not yet started.
 
 ### 6.5 FAIR — quick self-assessment
 
@@ -341,7 +341,7 @@ This is the standard level of most government portals worldwide; Togo is not beh
 
 | Index | Togo score | Reading |
 |-------|-----------:|---------|
-| **ODIN 2024** (Open Data Inventory, Open Data Watch) | **55 / 100** — rank 101/197 | Just above the global median (50.9). Sub-scores: Coverage 55, Openness 54. ([Togo profile](https://odin.opendatawatch.com/Report/countryProfileUpdated/TGO?year=2024)) |
+| **ODIN 2024** (Open Data Inventory, Open Data Watch) | **55 / 100** — rank 95/198 | Just above the global median (50.9). Sub-scores: Coverage 55, Openness 54. Source: [ODIN homepage](https://odin.opendatawatch.com/) — SPA site, navigate to "Country Profiles" → Togo → 2024. Raw JSON archived in this repo: [`data/raw/odin_tgo_2024.json`](https://github.com/gausoft/togo-opendata-audit/blob/main/data/raw/odin_tgo_2024.json). |
 | **Open Data Barometer 4th edition (2017)** | 16 / 100 — rank 81/115 | Last edition covering Togo. The successor (Global Data Barometer) does not systematically include the country |
 | **Global Data Barometer 2nd edition (2025)** | not publicly indexed | Pull directly from [globaldatabarometer.org/explore](https://globaldatabarometer.org/explore-the-results/) |
 | **UN E-Government Survey 2024 — OGDI** | not publicly indexed | Pull from [publicadministration.un.org/egovkb](https://publicadministration.un.org/egovkb/) |

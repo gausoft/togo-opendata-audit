@@ -331,7 +331,7 @@ No public news indicating Togo invitation, declination, or active commitment to 
 
 ## 6. Open Government Partnership (OGP) — Togo status
 
-Source: https://www.opengovpartnership.org/our-members/
+Source: https://www.opengovpartnership.org/members/
 
 **Togo is NOT an OGP member.** Six ECOWAS countries are active OGP members (Benin, Burkina Faso, Côte d'Ivoire, Ghana, Nigeria, Senegal). Three ECOWAS countries are **not** members: **Mali, Niger, Togo**.
 
@@ -422,7 +422,7 @@ Across the six international indices Togo holds a consistent profile: **mid-quar
 | 3 | World Bank SPI | Public WB API per indicator | https://api.worldbank.org/v2/country/TGO/indicator/IQ.SPI.OVRL?format=json |
 | 4 | GDB 2nd ed (2024/25) | Direct CSV from Open Data Watch storage bucket | https://storage.googleapis.com/gdb-2024-analysis/open_data_2nd_edition/gdb-2024-full-data.csv |
 | 5 | Open Data Charter | Live page check | https://opendatacharter.org/government-adopters/ |
-| 6 | OGP | Live page check + ODIN profile cross-check field `ogpStatus` | https://www.opengovpartnership.org/our-members/ |
+| 6 | OGP | Live page check + ODIN profile cross-check field `ogpStatus` | https://www.opengovpartnership.org/members/ |
 | 7 | GTMI 2022 | World Bank Data360 API per ISO3 | https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_GTMI&REF_AREA=TGO&format=json |
 
 ### Items not retrievable

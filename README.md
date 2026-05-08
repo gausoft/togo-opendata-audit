@@ -1,8 +1,8 @@
 # Togo Open Data Audit / Audit de l'open data togolais
 
-> **Status — May 2026.** Independent, constructive audit of Togo's official open data infrastructure: [opendata.gouv.tg](https://opendata.gouv.tg/) and [geodata.gouv.tg](https://geodata.gouv.tg/), benchmarked against international standards (Open Data Charter, DCAT-AP, FAIR, 5★ Linked Open Data) and against peer portals across ECOWAS, France, the UK, and Kenya.
+> **Status — May 2026.** Independent, constructive audit of Togo's official open data infrastructure: [opendata.gouv.tg](https://opendata.gouv.tg/fr/) and [geodata.gouv.tg](https://geodata.gouv.tg/), benchmarked against international standards (Open Data Charter, DCAT-AP, FAIR, 5★ Linked Open Data) and against peer portals across ECOWAS, France, the UK, and Kenya.
 >
-> **Statut — mai 2026.** Audit indépendant et constructif de l'infrastructure open data officielle du Togo : [opendata.gouv.tg](https://opendata.gouv.tg/) et [geodata.gouv.tg](https://geodata.gouv.tg/), comparée aux standards internationaux (Open Data Charter, DCAT-AP, FAIR, 5★ Linked Open Data) et aux portails pairs en CEDEAO, France, Royaume-Uni et Kenya.
+> **Statut — mai 2026.** Audit indépendant et constructif de l'infrastructure open data officielle du Togo : [opendata.gouv.tg](https://opendata.gouv.tg/fr/) et [geodata.gouv.tg](https://geodata.gouv.tg/), comparée aux standards internationaux (Open Data Charter, DCAT-AP, FAIR, 5★ Linked Open Data) et aux portails pairs en CEDEAO, France, Royaume-Uni et Kenya.
 
 ---
 
@@ -17,14 +17,13 @@ Le Togo dispose du même logiciel que data.gouv.fr (74 000 datasets) mais publie
 - 📊 [`reports/report-fr.md`](reports/report-fr.md) — Rapport complet (FR)
 - 📊 [`reports/report-en.md`](reports/report-en.md) — Full report (EN)
 - 📁 [`data/raw/`](data/raw/) — Métadonnées brutes des 1 550 datasets
-- 📁 [`data/processed/`](data/processed/) — Analyses dérivées (JSON)
+- 📁 [`data/processed/`](data/processed/) — Analyses dérivées (JSON, Markdown)
 - 🛠️ [`scripts/`](scripts/) — Scripts Python reproductibles
-- 📱 [`social/`](social/) — Versions condensées pour LinkedIn et X
 
 ### Reproduire l'audit
 
 ```bash
-git clone https://github.com/<user>/togo-opendata-audit.git
+git clone https://github.com/gausoft/togo-opendata-audit.git
 cd togo-opendata-audit
 python3 scripts/01_fetch_metadata.py     # Pull all dataset metadata
 python3 scripts/02_analyze_metadata.py   # Compute aggregate stats
@@ -44,9 +43,8 @@ Togo runs the same software as France's data.gouv.fr (74,000 datasets), publishe
 - 📊 [`reports/report-en.md`](reports/report-en.md) — Full report (EN)
 - 📊 [`reports/report-fr.md`](reports/report-fr.md) — Rapport complet (FR)
 - 📁 [`data/raw/`](data/raw/) — Raw metadata for all 1,550 datasets
-- 📁 [`data/processed/`](data/processed/) — Derived analyses (JSON)
+- 📁 [`data/processed/`](data/processed/) — Derived analyses (JSON, Markdown)
 - 🛠️ [`scripts/`](scripts/) — Reproducible Python scripts
-- 📱 [`social/`](social/) — Condensed posts for LinkedIn and X
 
 ---
 

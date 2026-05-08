@@ -1,6 +1,6 @@
 # International Open Data Benchmarks — Reference Dossier for the Togo Open Data Audit
 
-**Purpose.** Research dossier compiled to anchor the constructive audit of [opendata.gouv.tg](https://opendata.gouv.tg/) and [geodata.gouv.tg](https://geodata.gouv.tg/) against international norms, standards, and country benchmarks.
+**Purpose.** Research dossier compiled to anchor the constructive audit of [opendata.gouv.tg](https://opendata.gouv.tg/fr/) and [geodata.gouv.tg](https://geodata.gouv.tg/) against international norms, standards, and country benchmarks.
 
 **Scope.** Standards & frameworks, country ranking indices, peer-country quantitative comparison, common pitfalls, and audit methodology.
 
@@ -73,7 +73,7 @@ In practice, most government open data portals, including data.gouv.fr, sit at *
 **Mandatory fields.** DCAT v3 itself does **not** prescribe a hard-mandatory set; it leaves cardinality to *application profiles*. The two main profiles to know:
 
 - **DCAT-AP 3.0** (European Commission, [SEMIC](https://semiceu.github.io/DCAT-AP/releases/3.0.0/)) — the European baseline. Minimum required to be DCAT-AP-compliant: **`dct:title`** and **`dct:description`** for every Dataset; **`dcat:accessURL`** for every Distribution. Strongly recommended additions: `dct:publisher`, `dct:license`, `dct:modified`, `dcat:keyword`, `dcat:theme`, `dct:spatial`, `dct:temporal`, `dcat:mediaType`.
-- **DCAT-US 3.0** ([DOI/Project Open Data](https://doi-do.github.io/dcat-us/)) — the US federal profile.
+- **DCAT-US 3.0** ([DOI/Project Open Data](https://resources.data.gov/resources/dcat-us/)) — the US federal profile.
 
 **Why this matters for Togo.** udata (the software powering data.gouv.fr and opendata.gouv.tg) exposes a DCAT feed at `/catalog.xml` and `/catalog.json`. Auditing DCAT-AP compliance is therefore a one-shot scriptable check: missing licence, missing publisher, missing modified date all flag immediately.
 
@@ -129,7 +129,7 @@ FAIR emphasises **machine-actionability** — humans alone cannot keep up with d
 
 ### 1.8 EU Open Data Maturity Model
 
-The European Commission, via [data.europa.eu](https://data.europa.eu/), publishes an annual Open Data Maturity (ODM) Report assessing **34 countries** (27 EU Member States + 3 EFTA + 4 EU candidate countries: Albania, Bosnia and Herzegovina, Serbia, Ukraine).
+The European Commission, via [data.europa.eu](https://data.europa.eu/en), publishes an annual Open Data Maturity (ODM) Report assessing **34 countries** (27 EU Member States + 3 EFTA + 4 EU candidate countries: Albania, Bosnia and Herzegovina, Serbia, Ukraine).
 
 **Four dimensions** (stable since 2018):
 
@@ -146,7 +146,7 @@ The ODM methodology is the most copy-able framework for a national audit because
 
 ### 1.9 Open Government Partnership (OGP) — Togo's status
 
-The OGP is the multilateral platform where governments make biennial **National Action Plans** with civil society. As of May 2026, **Togo is NOT a member of OGP** ([OGP Members page](https://www.opengovpartnership.org/our-members), accessed via WebFetch May 2026). Togo passed an OGP Values Check assessment but never formalised membership, despite an invitation extended in 2018.
+The OGP is the multilateral platform where governments make biennial **National Action Plans** with civil society. As of May 2026, **Togo is NOT a member of OGP** ([OGP Members page](https://www.opengovpartnership.org/members/), accessed via WebFetch May 2026). Togo passed an OGP Values Check assessment but never formalised membership, despite an invitation extended in 2018.
 
 African OGP members: **Benin, Burkina Faso, Cabo Verde, Côte d'Ivoire, Ghana, Kenya, Liberia, Malawi, Morocco, Nigeria, Senegal, Seychelles, Sierra Leone, South Africa, Tunisia, Zambia.** All ten benchmark countries in §3 except Rwanda are OGP members.
 
@@ -230,7 +230,7 @@ Comparison table built from official portal pages (May 2026 fetches) and search 
 |---------|--------|----------|---------:|-------------|---------|-----------------|-----|----:|----:|
 | **France** | [data.gouv.fr](https://www.data.gouv.fr/) | **udata** (open source, AGPL) | **74,000** datasets/APIs · 389K files (verified May 2026) | Daily (active) | CSV, JSON, XLSX, GeoJSON, Parquet, … | **Licence Ouverte 2.0** (CC-BY equivalent) | Yes — full REST + DCAT | Yes | Yes |
 | **United Kingdom** | [data.gov.uk](https://www.data.gov.uk/) | **CKAN** | **~30,000** datasets ([Wikipedia](https://en.wikipedia.org/wiki/Data.gov.uk); homepage counter not displayed) | Active | CSV, JSON, XML, HTML, Shapefile | **Open Government Licence v3.0** (CC-BY equivalent) | Yes — CKAN API | Yes | Yes |
-| **Togo** | [opendata.gouv.tg](https://opendata.gouv.tg/) | **udata** (skin reused from France) | **1,550** datasets · 1,829 files (verified May 2026 homepage counter) | Mostly stagnant since Jan 2025 (audit baseline) | Mixed (audit needs to enumerate) | Not surfaced on homepage — needs check per dataset | udata exposes REST + DCAT | **No** | **No** |
+| **Togo** | [opendata.gouv.tg](https://opendata.gouv.tg/fr/) | **udata** (skin reused from France) | **1,550** datasets · 1,829 files (verified May 2026 homepage counter) | Mostly stagnant since Jan 2025 (audit baseline) | Mixed (audit needs to enumerate) | Not surfaced on homepage — needs check per dataset | udata exposes REST + DCAT | **No** | **No** |
 | **Kenya** | [opendata.go.ke](https://www.opendata.go.ke/) | Originally **CKAN/Socrata**, currently **ArcGIS Hub** (Esri) | not found (ArcGIS Hub does not expose a single counter) | Revival in progress; new Budget Data portal due July 2025 ([OGP commitment KE0034](https://www.opengovpartnership.org/members/kenya/commitments/KE0034/)) | CSV, KML, ZIP, GeoJSON, GeoTIFF, PNG | not found | Yes (ArcGIS REST) | Yes | No |
 | **Ghana** | [data.gov.gh](https://data.gov.gh/) | **CKAN** | **271** catalogues / **912** resources (verified May 2026 homepage counter) | Last-update timestamp not surfaced on homepage | Not surfaced on homepage | **Ghana Open Data Licence** (CC-BY 4.0 equivalent) | CKAN API | Yes | No |
 | **Côte d'Ivoire** | [data.gouv.ci](https://data.gouv.ci/) | proprietary CMS | **177** datasets · 124,357 records · 303 visualisations (verified May 2026 homepage counter) | not surfaced on homepage | not surfaced on homepage | not surfaced on homepage | not advertised | Yes ([CI0024 commitment](https://www.opengovpartnership.org/members/cote-divoire/commitments/CI0024/)) | No |
@@ -291,7 +291,7 @@ A useful technical reference for measuring freshness on portals is the IEEE pape
 
 **The seminal critique** (from the OKFN blog): "Open-washing — the difference between opening your data and simply making them available." ([OKFN blog, 2014](https://blog.okfn.org/2014/03/10/open-washing-the-difference-between-opening-your-data-and-simply-making-them-available/))
 
-The 2015 Open Data Barometer report directly named the phenomenon: open data initiatives risk simply being window-dressing — *"open washing"* — when data is called open at release but does not meet the full open criteria. ([Web Foundation, 2016](https://webfoundation.org/2016/10/openwashing-anyone/))
+The 2015 Open Data Barometer report directly named the phenomenon: open data initiatives risk simply being window-dressing — *"open washing"* — when data is called open at release but does not meet the full open criteria. ([Web Foundation, 2016](https://web.archive.org/web/2024/https://webfoundation.org/2016/10/openwashing-anyone/))
 
 Common openwashing patterns in government portals (synthesised from the cited literature):
 
@@ -329,7 +329,7 @@ The most authoritative published methodologies are:
 3. **OECD OURdata methodology** — 3 pillars × structured questions, ~670 data points per country. ([OURdata 2023 PDF](https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/12/2023-oecd-open-useful-and-re-usable-data-ourdata-index_cc9e8a9e/a37f51c3-en.pdf))
 4. **OpenDataMonitor** — automated catalogue scoring across openness, machine-readability, availability, metadata completeness. ([Methodology page](https://www.opendatamonitor.eu/frontend/web/index.php?r=site/methodology))
 5. **Neumaier et al. (2016)** — *Automated Quality Assessment of Metadata across Open Data Portals.* ACM JDIQ. The reference academic methodology — defines metrics for completeness, accuracy, retrievability, accessibility, openness, conformance. ([ACM DL](https://dl.acm.org/doi/10.1145/2964909))
-6. **Vetro et al. (2016)** — *Open data quality measurement framework: Definition and application to Open Government Data.* Government Information Quarterly. ([ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0740624X16300132))
+6. **Vetro et al. (2016)** — *Open data quality measurement framework: Definition and application to Open Government Data.* Government Information Quarterly. ([ScienceDirect](https://doi.org/10.1016/j.giq.2016.02.001))
 
 ### 5.2 Concrete metrics for a Togo audit
 
@@ -373,7 +373,7 @@ Aggregate to a single **Togo Open Data Health Score** = mean across datasets.
 ## 6. Synthesis — quotable headlines for the Togo audit
 
 1. **"Same software, 50× less data"** — Togo runs the same udata platform as France's data.gouv.fr (74,000 datasets) but publishes only 1,550. The bottleneck is not technical.
-2. **"Togo is the only sub-Saharan portal in our 11-country benchmark with neither OGP membership nor Open Data Charter endorsement."** ([OGP members](https://www.opengovpartnership.org/our-members) · [ODC adopters](https://opendatacharter.org/government-adopters/))
+2. **"Togo is the only sub-Saharan portal in our 11-country benchmark with neither OGP membership nor Open Data Charter endorsement."** ([OGP members](https://www.opengovpartnership.org/members/) · [ODC adopters](https://opendatacharter.org/government-adopters/))
 3. **"By the global yardstick, Togo's official statistics score 55/100 (ODIN 2024) — just above the global median of 50.9."** ([ODIN](https://odin.opendatawatch.com/))
 4. **"The Open Data Charter is clear: open data must be timely, comprehensive, and open by default. A portal that hasn't seen substantive updates since January 2025 is by definition non-compliant with principle 2."** ([ODC Principles](https://opendatacharter.org/principles/))
 5. **"'Open-washing' is a 12-year-old concept. Publishing CSVs no one updates is its textbook example."** ([OKFN, 2014](https://blog.okfn.org/2014/03/10/open-washing-the-difference-between-opening-your-data-and-simply-making-them-available/))
@@ -404,7 +404,7 @@ These are knowledge gaps from this dossier that the audit team should resolve di
 - [Tim Berners-Lee, 5-Star Open Data](https://5stardata.info/en/)
 - [W3C — DCAT v3 Recommendation](https://www.w3.org/TR/vocab-dcat-3/)
 - [DCAT-AP 3.0 (SEMIC)](https://semiceu.github.io/DCAT-AP/releases/3.0.0/)
-- [DCAT-US 3.0](https://doi-do.github.io/dcat-us/)
+- [DCAT-US 3.0](https://resources.data.gov/resources/dcat-us/)
 - [ISO 19115-1:2014](https://www.iso.org/standard/53798.html)
 - [Geospatial metadata (Wikipedia)](https://en.wikipedia.org/wiki/Geospatial_metadata)
 - [OGC standards directory](https://www.ogc.org/standards/wms/)
@@ -430,7 +430,7 @@ These are knowledge gaps from this dossier that the audit team should resolve di
 - [data.gouv.fr (France, udata)](https://www.data.gouv.fr/)
 - [udata source code (GitHub, Etalab)](https://github.com/opendatateam/udata)
 - [data.gov.uk (UK, CKAN)](https://www.data.gov.uk/)
-- [opendata.gouv.tg (Togo, udata)](https://opendata.gouv.tg/)
+- [opendata.gouv.tg (Togo, udata)](https://opendata.gouv.tg/fr/)
 - [geodata.gouv.tg (Togo, geo portal)](https://geodata.gouv.tg/)
 - [opendata.go.ke (Kenya, ArcGIS Hub)](https://www.opendata.go.ke/)
 - [data.gov.gh (Ghana, CKAN)](https://data.gov.gh/)
@@ -443,14 +443,14 @@ These are knowledge gaps from this dossier that the audit team should resolve di
 
 ### Pitfalls and audit methodology
 - [OKFN — Open-washing blog post (2014)](https://blog.okfn.org/2014/03/10/open-washing-the-difference-between-opening-your-data-and-simply-making-them-available/)
-- [Web Foundation — #openwashing… anyone? (2016)](https://webfoundation.org/2016/10/openwashing-anyone/)
+- [Web Foundation — #openwashing… anyone? (2016)](https://web.archive.org/web/2024/https://webfoundation.org/2016/10/openwashing-anyone/)
 - [Wikipedia — Openwashing](https://en.wikipedia.org/wiki/Openwashing)
 - [Bentley University — Deceptive practice of openwashing](https://www.bentley.edu/library/in-the-know/deceptive-practice-openwashing-open-access-data)
 - [Frictionless Data — Schema catalogue](https://frictionlessdata.io/blog/2020/04/23/table-schema-catalog/)
 - [Frictionless Data project](https://frictionlessdata.io/)
 - [Validata (French data validator)](https://validata.fr/)
 - [Neumaier et al. — Automated Quality Assessment (ACM 2016)](https://dl.acm.org/doi/10.1145/2964909)
-- [Vetro et al. — Open data quality framework (GIQ 2016)](https://www.sciencedirect.com/science/article/abs/pii/S0740624X16300132)
+- [Vetro et al. — Open data quality framework (GIQ 2016)](https://doi.org/10.1016/j.giq.2016.02.001)
 - [IEEE — Measures for Assessing Data Freshness in Open Data Portals](https://ieeexplore.ieee.org/document/7573684/)
 - [OpenDataMonitor methodology](https://www.opendatamonitor.eu/frontend/web/index.php?r=site/methodology)
 - [data.europa.eu — Guidelines for ensuring quality](https://data.europa.eu/en/academy/guidelines-ensuring-quality-open-data-and-metadata)
@@ -459,7 +459,7 @@ These are knowledge gaps from this dossier that the audit team should resolve di
 - [EU — High-Value Datasets factpage](https://digital-strategy.ec.europa.eu/en/news/commission-defines-high-value-datasets-be-made-available-re-use)
 
 ### OGP
-- [Open Government Partnership — Members](https://www.opengovpartnership.org/our-members)
+- [Open Government Partnership — Members](https://www.opengovpartnership.org/members/)
 - [OGP — National Action Plan handbook](https://www.opengovpartnership.org/national-handbook/membership/)
 
 ---
