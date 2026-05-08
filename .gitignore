@@ -17,3 +17,4 @@ node_modules/
 
 # Local-only working space (drafts, notes — not for public repo)
 private/
+.audit-internal/
